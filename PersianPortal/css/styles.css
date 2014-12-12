@@ -1,0 +1,300 @@
+/*
+
+My Custom CSS
+=============
+
+Author:  Brad Hussey
+Updated: August 2013
+Notes:	 Hand coded for Udemy.com
+
+*/
+
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+
+#features {
+	text-align: center;
+}
+
+#features img {
+	margin: 0 0 20px;
+}
+
+#inputMessage {
+	margin-bottom: 15px;
+}
+
+footer {
+	background: #333;
+	color: #eee;
+	font-size: 11px;
+	padding: 20px;
+}
+
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+
+body {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+}
+
+.well .page-header {
+	margin-top: 0;
+}
+
+.well .page-header h1 {
+	margin-top: 0;
+}
+
+ul.unstyled {
+	list-style: none;
+	padding: 0;
+}
+
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+
+#searchInput {
+	width: 200px;
+}
+
+.navbar-brand {
+	/* padding: 13px 15px; */
+}
+
+  
+   
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+   
+
+#myCarousel {
+	margin-top: 60px;
+}
+
+
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+   
+.alert {
+	margin-top: 20px;
+	display: none;
+}
+
+.well {
+	margin: 20px 0;
+}
+
+.tabbable img.thumbnail {
+	margin: 0px 0px 10px 20px
+}
+
+.thumbnails {
+	margin: 20px 0;
+}
+
+.thumbnail {
+	position: relative;
+}
+
+.thumbnail h3 {
+	font-size: 16px;
+	margin: 0 0 10px;
+	line-height: 20px;
+}
+
+.thumbnail .price {
+	font-size: 22px;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	padding: 10px;
+}
+
+.thumbnail .price sup {
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.thumbnail span.glyphicon {
+	margin-right: 5px;
+}
+
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px)  {
+#myCarousel .item { height: 200px; }
+
+#slide1 {
+	background: url('../images/carousel_xsmall_01 .jpg') top center no-repeat;
+}
+
+#slide2 {
+	background: url('../images/carousel_xsmall_02.jpg') top center no-repeat;
+}
+
+#slide3 {
+	background: url('../images/carousel_xsmall_03 .jpg') top center no-repeat;
+}
+
+.carousel-caption {
+		font-size: 14px;
+	}
+	
+	.carousel-caption h4 {
+		font-size: 10px;
+	}
+}
+
+/* tablets*/
+@media (min-width: 480px) and (max-width: 920px) {
+#myCarousel .item { height: 300px; }
+
+#slide1 {
+	background: url('../images/carousel_small_01.jpg') top center no-repeat;
+}
+
+#slide2 {
+	background: url('../images/carousel_small_02.jpg') top center no-repeat;
+}
+
+#slide3 {
+	background: url('../images/carousel_small_03.jpg') top center no-repeat;
+}
+
+.carousel-caption {
+		font-size: 14px;
+	}
+	
+	.carousel-caption h4 {
+		font-size: 18px;
+	}
+}
+
+
+/* normal desktop*/
+@media (max-width: 1200px) and (min-width: 920px) {
+	
+	#myCarousel .item { height: 370px; }
+	
+	#slide1 {
+		background: url('../images/carousel_medium_01.jpg') top center no-repeat;
+	}
+	
+	#slide2 {
+		background: url('../images/carousel_medium_02.jpg') top center no-repeat;
+	}
+	
+	#slide3 {
+		background: url('../images/carousel_medium_03.jpg') top center no-repeat;
+	}
+	
+	
+	.carousel-caption {
+	font-size: 18px; 
+}
+
+.carousel-caption h4 {
+	font-size: 24px; 
+}
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+	#myCarousel .item { height: 500px; }
+	
+	#slide1 {
+		background: url('../images/carousel_large_01.jpg') top center no-repeat;
+	}
+	
+	#slide2 {
+		background: url('../images/carousel_large_02.jpg') top center no-repeat;
+	}
+	
+	#slide3 {
+		background: url('../images/carousel_large_03.jpg') top center no-repeat;
+	}
+	.carousel-caption {
+	font-size: 24px; 
+}
+
+.carousel-caption h4 {
+	font-size: 32px; 
+}
+}
+
+
+/* --------------------------------------
+   Fonts
+   -------------------------------------- */
+
+html *
+{
+
+   font-family:"B mitra", "B nazanin", "Arial" !important;
+}
+.navbar {
+font-size:16px;
+}
+
+ #searchInput {
+font-size:16px;
+}
+.btn
+{
+font-size:18px;	
+}
+
+ @media (max-width: 480px) {
+	
+	.thumbnail .price {
+		font-size: 14px;
+	}
+	
+	.thumbnail .price sup {
+		font-size: 10px;
+	}
+	
+}
+/*body{
+background-color:black;
+}*/
+
+.navbar-brand {
+    max-width: 300px;
+    float: right;
+}
+
+.navbar-nav {
+    float: left;
+}
+
+body {
+    padding-top: 55px;
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.0.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.0.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.0.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.0.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.0.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
