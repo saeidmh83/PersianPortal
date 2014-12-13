@@ -922,8 +922,8 @@ th {
   margin-left: 0;
 }
 .dropdown-menu {
-  right: 0;
-  left: auto;
+  right: auto;
+  left: 0;
   float: left;
   text-align: right;
 }
