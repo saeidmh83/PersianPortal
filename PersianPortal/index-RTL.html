@@ -8,13 +8,13 @@
 
     <!-- Mobile viewport optimized -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <link href="css/font-awesome.min.css" rel="stylesheet" />
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/bootstrap-rtl.css">
-    <link href="css/bootstrap-glyphicons.css" rel="stylesheet">
+    <!--<link href="css/bootstrap-glyphicons.css" rel="stylesheet">-->
 
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
@@ -28,10 +28,8 @@
 </head>
 <body>
 
-    <div id="main">
-
         <div class="navbar navbar-fixed-top">
-            <div class="container">
+            <div class="container-fluid">
 
                 <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
                 <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
@@ -42,25 +40,25 @@
 
                 <ul class="nav navbar-nav">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong class="caret"></strong> حساب من <span class="glyphicon glyphicon-user"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong class="caret"></strong> حساب من <span class="fa fa-user"></span></a>
 
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="#"><span class="glyphicon glyphicon-wrench"></span> تنظیمات</a>
+                                <a href="#"><span class="fa fa-wrench"></span> تنظیمات</a>
                             </li>
 
                             <li>
-                                <a href="#"><span class="glyphicon glyphicon-refresh"></span> به روز رسانی پروفایل</a>
+                                <a href="#"><span class="fa fa-refresh"></span> به روز رسانی پروفایل</a>
                             </li>
 
                             <li>
-                                <a href="#"><span class="glyphicon glyphicon-briefcase"></span> پرداخت</a>
+                                <a href="#"><span class="fa fa-briefcase"></span> پرداخت</a>
                             </li>
 
                             <li class="divider"></li>
 
                             <li>
-                                <a href="#"><span class="glyphicon glyphicon-off"></span> خروج</a>
+                                <a href="#"><span class="fa fa-sign-out"></span> خروج</a>
                             </li>
                         </ul>
                     </li>
@@ -73,7 +71,7 @@
 
                 <form class="navbar-form  text-center">
                     <input type="text" class="form-control" placeholder="جستجو..." id="searchInput">
-                    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                    <button type="submit" class="btn btn-default"><span class="fa fa-search"></span></button>
                 </form><!-- end navbar-form -->
 
 
@@ -83,23 +81,22 @@
         </div><!-- end container -->
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-2" style="height: 500px">
+                <div class="col-lg-2">
                     <ul>
                         <li><a href="#"><i class="fa fa-home"></i> صفحه اصلی</a></li>
                         <li><a href="#"><i class="fa fa-microphone"></i> اخبار</a></li>
-                        <li><a href="#">اشعار</a></li>
+                        <li><a href="#"><i class="fa fa-comment"></i> اشعار</a></li>
                         <li><a href="#"><i class="fa fa-envelope"></i> ایمیل</a></li>
                         <li><a href="#"><i class="fa fa-book"></i> لغت نامه</a></li>
                         <li><a href="#"><i class="fa fa-shopping-cart"></i> فروشگاه</a></li>
                         <li><a href="#"><i class="fa fa-microphone"></i> شبکه اجتماعی</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-10" style="background-color: red; height: 500px"> b</div>
+                <div class="col-lg-10">Main Content Goes here!</div>
             </div>
         </div><!-- end navbar -->
 
         <footer></footer>
-    </div>
 
     <!-- All Javascript at the bottom of the page for faster page loading -->
     <script src="js/jquery.js"></script>

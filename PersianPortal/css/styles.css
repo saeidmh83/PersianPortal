@@ -244,11 +244,11 @@ ul.unstyled {
    Fonts
    -------------------------------------- */
 
-html *
+body
 {
-
-   font-family:"B mitra", "B nazanin", "Arial" !important;
+   font-family:"B mitra", "B nazanin", "Arial";
 }
+
 .navbar {
 font-size:16px;
 }
@@ -286,7 +286,7 @@ background-color:black;
 }
 
 body {
-    padding-top: 55px;
+    padding-top: 81px;
 }
 
 @font-face {
