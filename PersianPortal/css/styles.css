@@ -27,7 +27,7 @@ Notes:	 Hand coded for Udemy.com
 }
 
 footer {
-	background: #333;
+	background: #808080;
 	color: #eee;
 	font-size: 11px;
 	padding: 20px;
@@ -246,7 +246,7 @@ ul.unstyled {
 
 body
 {
-   font-family:"B mitra", "B nazanin", "Arial";
+   font-family:"Dast Nevis", "B Tabassom","B mitra", "B nazanin", "Arial";
    font-size: 15pt;
 }
 
@@ -312,6 +312,9 @@ body {
 
 .btn-search {
     height: 38px;
+    font-family:inherit;
+    font-size:large
+
 }
 
 #search-box {
@@ -320,6 +323,33 @@ body {
     padding: 5px 0;
 }
 
-#login-modal-title-signup {
-    display: none;
+#dictionary {
+    /*max-width: 270px;*/
+    height:40px;
+    margin-right:25px;
+   margin-left:auto;
+   font-size:17px;
+}
+
+#searchResult{
+    margin-top:40px;
+    /*max-width:628px;*/
+    min-height:300px;
+    display:none;
+
+}
+
+
+
+/*--------------------------------------------
+    navigations
+    ----------------------------------------------
+    */
+
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: rgb(197,0,69);
+  background-color: transparent;
 }
