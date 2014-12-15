@@ -319,3 +319,7 @@ body {
     margin: 0 auto; 
     padding: 5px 0;
 }
+
+#login-modal-title-signup {
+    display: none;
+}

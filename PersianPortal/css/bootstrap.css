@@ -429,7 +429,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   font-weight: 500;
   line-height: 1.1;
 }
@@ -482,7 +482,7 @@ h3,
 
 h4,
 .h4 {
-  font-size: 18px;
+  font-size: 18pt;
 }
 
 h5,
@@ -2382,7 +2382,7 @@ a.list-group-item.active .list-group-item-text {
 
 .close {
   float: right;
-  font-size: 21px;
+  font-size: 25pt;
   font-weight: bold;
   line-height: 1;
   color: #000000;
@@ -3407,7 +3407,7 @@ button.close {
 
 .modal-header {
   min-height: 16.428571429px;
-  padding: 15px;
+  padding: 15px 25px 15px 15px;
   border-bottom: 1px solid #e5e5e5;
 }
 
