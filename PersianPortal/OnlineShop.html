@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Website Title & Description for Search Engine purposes -->
+    <title> Bootstrap 3 یادگیری </title>
+    <meta name="description" content="Learn how to code your first responsive website with the new Twitter Bootstrap 3.">
+
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap-rtl.css">
+    <!--<link href="css/bootstrap-glyphicons.css" rel="stylesheet">-->
+
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Include Modernizr in the head, before any other Javascript -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+
+</head>
+<body>
+
+    <div class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+
+            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+            <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <ul class="nav navbar-nav nav">
+                <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong class="fa fa-fw fa-shopping-cart"></strong> سبد خرید  </a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-user"></span> حساب من <strong class="caret"></strong></a>
+
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a id="kk" href="#" style="background-color:none"><span class="fa fa-wrench"></span> تنظیمات</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><span class="fa fa-refresh"></span> به روز رسانی پروفایل</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><span class="fa fa-briefcase"></span> پرداخت</a>
+                        </li>
+
+                        <li class="divider"></li>
+
+                        <li>
+                            <a href="#"><span class="fa fa-sign-out"></span> خروج</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+
+            <a class="navbar-brand" href="/"><!--<img src="images/logo.png" alt="Your Logo">--> پورتال جامع پارسی زبانان</a>
+
+
+            <div class="container">
+                <form class="navbar-form" id="search-box">
+                    <div class="input-group" style="display:table">
+                        <span class="input-group-btn">
+                            <button type="submit" class="btn btn-default btn-search"><span class="fa fa-search"></span></button>
+                        </span>
+                        <input type="text" class="form-control" placeholder="جستجو..." id="searchInput">
+                    </div>
+                </form><!-- end navbar-form -->
+            </div>
+
+        </div><!-- end nav-collapse -->
+
+
+    </div><!-- end container -->
+    <div class="container-fluid" style="min-height:670px">
+        <div class="row">
+            <div class="col-lg-2" style="max-width:200px">
+                <ul class="side-menu nav nav-pills nav-stacked">
+                    <li class="active"><a href="/PortalHomePage.html"><i class="fa fa-home"></i>صفحه اصلی</a></li>
+                    <li><a href="#"><i class="fa fa-fw fa-microphone"></i>اخبار</a></li>
+                    <li><a href="/News.html"><i class="fa fa-fw fa-comment"></i>اشعار</a></li>
+                    <li><a href="#"><i class="fa fa-fw fa-envelope"></i>ایمیل</a></li>
+                    <li><a href="/Dictionary.html"><i class="fa fa-fw fa-fw fa-book"></i>لغت نامه</a></li>
+                    <li><a href="/OnlineShop.html"><i class="fa fa-fw fa-shopping-cart"></i>فروشگاه</a></li>
+                    <li><a href="#"><i class="fa fa-fw fa-users"></i>شبکه اجتماعی</a></li>
+                </ul>
+            </div>
+
+            <div class="tabbable col-lg-9 col-xs-12">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#tab1" data-toggle="tab"> بخش کتاب ها</a></li>
+                    <li class=""><a href="#tab2" data-toggle="tab">بخش CD ها</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab1">
+                        <h4><span class="glyphicon glyphicon-map-marker"></span> موقعیت مکانی ما: <small>دانشگاه شهید بهشتی</small></h4>
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3236.0450233081992!2d51.394966!3d35.798828!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e062a0cd26de5%3A0x6089f647c7807677!2z2K_Yp9mG2LTar9in2Ycg2LTZh9uM2K8g2KjZh9i02KrbjA!5e0!3m2!1sen!2sir!4v1416251624573" width="100%" height="200" frameborder="0" style="border:0"></iframe>
+                        <br>
+                        <br>
+
+                        <p>دانشگاه شهید بهشتی یکی از دانشگاه&zwnj;های دولتی ایران است که در منطقهٔ اوین، غرب ولنجک و شرق درکه در شمال غربی تهران واقع شده&zwnj;است. این دانشگاه از جمله بزرگ&zwnj;ترین و معتبرترین دانشگاه&zwnj;های ایران محسوب می&zwnj;شود.این دانشگاه در مقاطع کاردانی، کارشناسی، کارشناسی ارشد و دکترا در دوره&zwnj;های مجازی، روزانه و شبانه دانشجو می&zwnj;پذیرد و تاکنون بیش از ۴۳٬۳۳۴ دانشجو از این دانشگاه فارغ&zwnj;التحصیل شده&zwnj;اند.</p>
+
+                        <p>این دانشگاه در سال ۱۳۳۸ با نام دانشگاه ملی ایران به&zwnj;دستور محمدرضا شاه پهلوی و توسط علی شیخ&zwnj;الاسلام تأسیس شد و تا پیش از سال ۱۳۶۲ با این نام خوانده می&zwnj;شد. علی&zwnj;رغم افتتاح رسمی در اسفندماه ۱۳۳۹، پذیرش دانشجو در مهرماه ۱۳۳۹ و توسط دانشکده&zwnj;های معماری و شهرسازی و علوم بانکداری که اولین دانشکده&zwnj;های دانشگاه بودند انجام شد. </p>
+                    </div><!-- end tab-pane -->
+
+                    <div class="tab-pane" id="tab2">
+                        <h4>یک عکس راست چین شده <small>با استفاده از Placehold.it</small></h4>
+
+                        <img src="images/thumbnail.gif" class="thumbnail pull-right" alt="Placeholder image">
+
+                        <p>ظهور خودسازماندهی را به آقای Ross Ashby نسبت داده اند. ایشان در ابتدا سازمان را چنین تعریف نمودند: " سازمان یک سیستم عبارت است از وابستگی کارکردی وضعیت آینده آن به وضعیت حاضر و ورودی&zwnj;های خارجی". در این مقاله خودسازماندهی چنین تعریف شده است: "خودسازماندهی تغییر سازمان سیستم توسط خود آن سیستم و بدون دخالت موجودیت&zwnj;های خارجی است". این تعریف با تعریف صحیح شناخته شده امروز کاملاً منطبق است. زمینه های اصلی مطالعه خودسازماندهی پس از معرفی آن عبارت بودند از: فیزیک، علوم کامپیوتر و تئوری سیستم&zwnj;ها. در علوم کامپیوتری خودسازماندهی در حوزه هایی مانند یادگیری، خود تطبیقی و ...</p>
+
+                        <p>در منابع کلاسیک سیستم خودتطبیق چنین تعریف شده است: "یک سیستم خودتطبیق رفتار خود را ارزیابی نموده و هنگامی که این رفتارها در جهت اهداف تعیین شده برای نرم افزار نباشند و یا کارایی بالاتری ممکن باشد، این رفتارها را تغییر می دهد." در یک تعریف وسیع تر سیستم خودتطبیق سیستمی است که رفتار خود را در پاسخ به تغییرات روی داده در محیط عملیاتی خود تغییر می دهد. همچنین در اینجا منظور از محیط عملیاتی هر چیزی مانند ورودی&zwnj;های کاربر نهایی، ابزار سخت افزاری، حسگرها و ابزار برنامه است که برای سیستم نرم افزاری قابل مشاهده باشد...</p>
+
+                        <hr>
+
+                        <a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span> کلیک کنید تا یک Modal ظاهر شود!</a>
+
+                        <div class="modal fade" id="myModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button class="close" data-dismiss="modal">×</button>
+
+                                        <h4 class="modal-title">پنجره ی یک Modal</h4>
+                                    </div><!-- end modal-header -->
+                                    <div class="modal-body">
+                                        <h4>یک نوشته درون Modal</h4>
+
+                                        <p>در منابع کلاسیک سیستم خودتطبیق چنین تعریف شده است: "یک سیستم خودتطبیق رفتار خود را ارزیابی نموده و هنگامی که ا...</p>
+
+                                        <h4>نمایش PopOver ها</h4>
+                                        <a href="#" class="btn btn-danger pop" data-toggle="popover" data-placement="top" data-original-title="شما کلیک کردید!" data-content="واضح بود که این کار را انجام میدهید!">کلیک نکنید!</a>
+
+                                        <h4>نمایش ToolTip ها درون Modal</h4>
+                                        <a href="" data-original-title="نوشته ی راهنما" rel="tooltip">این لینک</a> می بایست حاوی یک ToolTip باشد <a href="#" data-original-title="تولتیپ!!!" rel="tooltip">این یکی!</a>!
+
+                                        <hr>
+
+                                        <p><small class="text-muted">پی نوشت: این فرم هیچ عملی انجام نمی دهد</small></p>
+
+                                        <form class="form-horizontal">
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label" for="inputName">نام</label>
+                                                <div class="col-sm-10">
+                                                    <input class="form-control" id="inputName" placeholder="نام ..." type="text">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label" for="inputEmail">ایمیل</label>
+                                                <div class="col-sm-10">
+                                                    <input class="form-control" id="inputEmail" placeholder="ایمیل ..." type="email">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label" for="inputMessage">پیغام</label>
+                                                <div class="col-sm-10">
+                                                    <textarea class="form-control" id="inputMessage" placeholder="پیغام ..." rows="3"></textarea>
+                                                    <div class="row">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+
+                                                <button id="Dictionary" class="col-sm-1 btn btn-danger btn-medium  col-sm-offset-2" type="button">غلط یابی</button>
+                                                <button class="col-sm-1 btn btn-success btn-medium" style="margin-right:5px;" type="submit">بفرست!</button>
+
+                                            </div>
+                                        </form>
+                                    </div><!-- end modal-body -->
+
+                                    <div class="modal-footer">
+                                        <button class="btn btn-default" data-dismiss="modal" type="button">بستن</button> <button class="btn btn-primary" type="button">ذخیره</button>
+                                    </div><!-- end modal-footer -->
+                                </div><!-- end modal-content -->
+                            </div><!-- end modal-dialog -->
+                        </div><!-- end myModal -->
+
+                    </div><!-- end tab-pane -->
+                </div><!-- end tab-content -->
+            </div>
+
+        </div>
+    </div>
+
+    <footer></footer>
+
+    <!-- All Javascript at the bottom of the page for faster page loading -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+    <script>
+        function ShowResult() {
+            if ($("#dictionary").val() != "")
+                $("#searchResult").css("display", "block");
+        }
+    </script>
+</body>
+</html>
