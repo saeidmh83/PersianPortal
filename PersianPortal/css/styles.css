@@ -404,3 +404,9 @@ body {
 .label-warning{
     background-color:rgb(221,0,78)
 }
+
+.pagination .arrows {
+    font-family: Tahoma;
+    font-size: 13pt;
+    padding: 0 10px 0 10px;
+}
