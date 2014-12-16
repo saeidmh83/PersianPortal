@@ -262,7 +262,7 @@ body {
     background-image: url('/images/notepad-repeat-bg.jpg');
     background-repeat: repeat-y;
     background-size: 100% auto;
-    font-family: "Dast Nevis", "B Tabassom","B mitra", "B nazanin", "Arial";
+    font-family: "Dast Nevis", "B Tabassom","B mitra", "B nazanin", "Segoe Print","Buxton Sketch", "Arial";
     font-size: 15pt;
     height: 100%;
     /*background-image: url('/images/notepad-top-bg.jpg');
@@ -428,4 +428,58 @@ body {
     background-color: #eeeeee;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
+}
+
+
+
+
+/*
+    ------------------------------------------------
+    slider
+    ----------------------------------------------
+    */
+
+
+.carousel-indicators li{
+    border: 1px solid rgb(221,0,78);
+  border-radius: 10px;
+
+}
+
+.carousel-indicators .active {
+  background-color: rgb(221,0,78);
+}
+
+.carousel-control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  text-shadow: none;
+  opacity: 0;
+  filter: none;
+}
+
+.carousel-control.left {
+    background:none;
+  background-color: none;
+  }
+
+.carousel-control.right {
+  right: 0;
+  left: auto;
+  background:none;
+
+}
+
+.carousel-control:hover,
+.carousel-control:focus {
+  color: #000000;
+  text-decoration: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
 }

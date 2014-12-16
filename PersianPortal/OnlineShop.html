@@ -66,7 +66,7 @@
             </ul>
 
 
-            <a class="navbar-brand" href="/"><!--<img src="images/logo.png" alt="Your Logo">--> پورتال جامع پارسی زبانان</a>
+            <div class="navbar-brand"><!--<img src="images/logo.png" alt="Your Logo">--> پورتال جامع پارسی زبانان</div>
 
 
             <div class="container">
@@ -88,32 +88,74 @@
         <div class="row">
             <div class="col-lg-2" style="max-width:200px">
                 <ul class="side-menu nav nav-pills nav-stacked">
-                    <li class="active"><a href="/PortalHomePage.html"><i class="fa fa-home"></i>صفحه اصلی</a></li>
+                    <li><a href="/PortalHomePage.html"><i class="fa fa-home"></i>صفحه اصلی</a></li>
                     <li><a href="#"><i class="fa fa-fw fa-microphone"></i>اخبار</a></li>
                     <li><a href="/News.html"><i class="fa fa-fw fa-comment"></i>اشعار</a></li>
                     <li><a href="#"><i class="fa fa-fw fa-envelope"></i>ایمیل</a></li>
                     <li><a href="/Dictionary.html"><i class="fa fa-fw fa-fw fa-book"></i>لغت نامه</a></li>
-                    <li><a href="/OnlineShop.html"><i class="fa fa-fw fa-shopping-cart"></i>فروشگاه</a></li>
+                    <li class="active"><a href="/OnlineShop.html"><i class="fa fa-fw fa-shopping-cart"></i>فروشگاه</a></li>
                     <li><a href="#"><i class="fa fa-fw fa-users"></i>شبکه اجتماعی</a></li>
                 </ul>
             </div>
 
-            <div class="tabbable col-lg-9 col-xs-12">
+            <div class="tabbable col-lg-9 col-xs-12" style="padding-right:25px">
                 <ul class="nav nav-tabs">
                     <li class="active"><a href="#tab1" data-toggle="tab"> بخش کتاب ها</a></li>
                     <li class=""><a href="#tab2" data-toggle="tab">بخش CD ها</a></li>
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane active" id="tab1">
-                        <h4><span class="glyphicon glyphicon-map-marker"></span> موقعیت مکانی ما: <small>دانشگاه شهید بهشتی</small></h4>
+                       
+                        <div class="carousel slide" id="myCarousel">
 
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3236.0450233081992!2d51.394966!3d35.798828!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e062a0cd26de5%3A0x6089f647c7807677!2z2K_Yp9mG2LTar9in2Ycg2LTZh9uM2K8g2KjZh9i02KrbjA!5e0!3m2!1sen!2sir!4v1416251624573" width="100%" height="200" frameborder="0" style="border:0"></iframe>
-                        <br>
-                        <br>
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+                                <li data-slide-to="1" data-target="#myCarousel" class=""></li>
+                                <li data-slide-to="2" data-target="#myCarousel" class=""></li>
+                            </ol>
 
-                        <p>دانشگاه شهید بهشتی یکی از دانشگاه&zwnj;های دولتی ایران است که در منطقهٔ اوین، غرب ولنجک و شرق درکه در شمال غربی تهران واقع شده&zwnj;است. این دانشگاه از جمله بزرگ&zwnj;ترین و معتبرترین دانشگاه&zwnj;های ایران محسوب می&zwnj;شود.این دانشگاه در مقاطع کاردانی، کارشناسی، کارشناسی ارشد و دکترا در دوره&zwnj;های مجازی، روزانه و شبانه دانشجو می&zwnj;پذیرد و تاکنون بیش از ۴۳٬۳۳۴ دانشجو از این دانشگاه فارغ&zwnj;التحصیل شده&zwnj;اند.</p>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active" id="slide1">
+                                    <div class="carousel-caption">
+                                        <img style="height:400px" src="images/shazdeh.jpg" />
+                                        <h4>یادگیری Bootstrap 3</h4>
+                                        <p>یاد بگیرید چگونه با Bootstrap 3 وبسایت interactive بسازید</p>
+                                    </div><!-- end carousel-caption-->
+                                </div><!-- end item -->
 
-                        <p>این دانشگاه در سال ۱۳۳۸ با نام دانشگاه ملی ایران به&zwnj;دستور محمدرضا شاه پهلوی و توسط علی شیخ&zwnj;الاسلام تأسیس شد و تا پیش از سال ۱۳۶۲ با این نام خوانده می&zwnj;شد. علی&zwnj;رغم افتتاح رسمی در اسفندماه ۱۳۳۹، پذیرش دانشجو در مهرماه ۱۳۳۹ و توسط دانشکده&zwnj;های معماری و شهرسازی و علوم بانکداری که اولین دانشکده&zwnj;های دانشگاه بودند انجام شد. </p>
+                                <div class="item" id="slide2">
+                                    <div class="carousel-caption">
+                                        <img style="height:400px" src="images/__20120513_1748875240.gif" />
+                                        <h4>یادگیری سریع کد زدن وبسایت</h4>
+                                        <p>به HTML5 از &amp; amp؛ CSS3 است البته محبوب Udemy است که هزاران مشتاق طراحان وب کمک راه اندازی حرفه ای طراحی وب سایت خود را.</p>
+                                    </div><!-- end carousel-caption-->
+                                </div><!-- end item -->
+
+                                <div class="item" id="slide3">
+                                    <div class="carousel-caption">
+                                        <img style="height:400px" src="images/874--500x500.jpg" />
+                                        <h4>اطلاعات اولیه میزبانی وب</h4>
+                                        <p>یاد بگیرید چگونه به خرید یک نام دامنه مناسب و بسته های میزبانی وب و وب سایت خود را زندگی می کنند در وب را با سهولت.</p>
+                                    </div><!-- end carousel-caption-->
+                                </div><!-- end item -->
+                            </div><!-- carousel-inner -->
+                            <!-- Controls -->
+                            <a class="left carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+                            <a class="right carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+
+                        </div>
+
+                        <!--<h4><span class="glyphicon glyphicon-map-marker"></span> موقعیت مکانی ما: <small>دانشگاه شهید بهشتی</small></h4>
+
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3236.0450233081992!2d51.394966!3d35.798828!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e062a0cd26de5%3A0x6089f647c7807677!2z2K_Yp9mG2LTar9in2Ycg2LTZh9uM2K8g2KjZh9i02KrbjA!5e0!3m2!1sen!2sir!4v1416251624573" width="100%" height="200" frameborder="0" style="border:0"></iframe>
+                            <br>
+                            <br>
+                            <p style="margin-top:7px; line-height:2.1">دانشگاه شهید بهشتی یکی از دانشگاه&zwnj;های دولتی ایران است که در منطقهٔ اوین، غرب ولنجک و شرق درکه در شمال غربی تهران واقع شده&zwnj;است. این دانشگاه از جمله بزرگ&zwnj;ترین و معتبرترین دانشگاه&zwnj;های ایران محسوب می&zwnj;شود.این دانشگاه در مقاطع کاردانی، کارشناسی، کارشناسی ارشد و دکترا در دوره&zwnj;های مجازی، روزانه و شبانه دانشجو می&zwnj;پذیرد و تاکنون بیش از ۴۳٬۳۳۴ دانشجو از این دانشگاه فارغ&zwnj;التحصیل شده&zwnj;اند.</p>
+
+                            <p style="margin-top:-17px; line-height:2.1">این دانشگاه در سال ۱۳۳۸ با نام دانشگاه ملی ایران به&zwnj;دستور محمدرضا شاه پهلوی و توسط علی شیخ&zwnj;الاسلام تأسیس شد و تا پیش از سال ۱۳۶۲ با این نام خوانده می&zwnj;شد. علی&zwnj;رغم افتتاح رسمی در اسفندماه ۱۳۳۹، پذیرش دانشجو در مهرماه ۱۳۳۹ و توسط دانشکده&zwnj;های معماری و شهرسازی و علوم بانکداری که اولین دانشکده&zwnj;های دانشگاه بودند انجام شد. </p>
+                            <a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span>  </a>-->
                     </div><!-- end tab-pane -->
 
                     <div class="tab-pane" id="tab2">
