@@ -252,11 +252,25 @@ ul.unstyled {
 /* --------------------------------------
    Fonts
    -------------------------------------- */
+html {
+    /*background-image: url('/images/notepad-repeat-bg.jpg');
+    background-repeat: repeat-y;
+    background-size: 100% auto;*/
+}
 
 body {
+    background-image: url('/images/notepad-repeat-bg.jpg');
+    background-repeat: repeat-y;
+    background-size: 100% auto;
     font-family: "Dast Nevis", "B Tabassom","B mitra", "B nazanin", "Arial";
-   font-size: 15pt;
+    font-size: 15pt;
+    height: 100%;
+    /*background-image: url('/images/notepad-top-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top;*/
 }
+
 
 .navbar {
     font-size: 14pt;
@@ -308,6 +322,9 @@ body {
 
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 
+.side-menu {
+    padding: 20px 0 20px 0;
+}
 
 .side-menu li i {
     margin-left: 15px;
@@ -396,10 +413,6 @@ body {
     color:rgb(221,0,78);
 }
 
-
-
-
-
 /* ---------------------------------------------------- */
 .label-warning{
     background-color:rgb(221,0,78)
@@ -409,4 +422,10 @@ body {
     font-family: Tahoma;
     font-size: 13pt;
     padding: 0 10px 0 10px;
+}
+
+#main-menu {
+    background-color: #eeeeee;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
