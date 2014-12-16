@@ -344,7 +344,7 @@ body {
 /*--------------------------------------------
     navigations
     ----------------------------------------------
-    */
+*/
 
 
 .nav-pills > li.active > a,
@@ -352,4 +352,15 @@ body {
 .nav-pills > li.active > a:focus {
   color: rgb(197,0,69);
   background-color: transparent;
+}
+
+.news-separator {
+    background-color: #808080 !important;
+    height: 1px;
+}
+
+.pagination .arrows {
+    font-family: Tahoma; 
+    font-size: 13pt;
+    margin: 0 10px 0 10px;
 }
