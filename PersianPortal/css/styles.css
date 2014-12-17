@@ -56,6 +56,9 @@ ul.unstyled {
 	padding: 0;
 }
 
+p {
+    font-size: 13px
+}
 
 /* --------------------------------------
    Navbar
@@ -483,3 +486,30 @@ body {
   opacity: 0.9;
   filter: alpha(opacity=90);
 }
+
+
+.thumbnail {
+    margin: 12px
+}
+
+.caption {
+    text-align: center
+}
+
+#ShoppingCart{
+    background-color:#f2f2f2;
+    /*border:2px solid #d7d7d7;*/
+    border-radius:5px;
+    padding:15px;
+    text-align:center;
+   
+}
+
+#ShoppingCart td {
+    border:3px solid #d7d7d7;
+    border-radius:15px;
+    padding:15px;
+    text-align:center;
+}
+
+
