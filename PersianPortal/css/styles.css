@@ -262,9 +262,9 @@ html {
 }
 
 body {
-    background-image: url('/images/notepad-repeat-bg.jpg');
+    /*background-image: url('/images/notepad-repeat-bg.jpg');
     background-repeat: repeat-y;
-    background-size: 100% auto;
+    background-size: 100% auto;*/
     font-family: "Dast Nevis", "B Tabassom","B mitra", "B nazanin", "Segoe Print","Buxton Sketch", "Arial";
     font-size: 15pt;
     height: 100%;
@@ -512,33 +512,66 @@ body {
     text-align:center;
 }
 
-#SendingInfo{
-   border-collapse: separate;
-border-spacing: 2px;
+.dashed-hr {
+    background: url("/images/dash.png") repeat-x scroll 0 40% rgba(0, 0, 0, 0);
+    height: 45px;
+    margin-bottom: 40px;
+    padding: 0;
 }
 
-#SendingInfo td{
-   border-collapse: separate;
-border-spacing: 2px;
-padding:7px
+.news-read-more {
+    background: url("/images/icon-specs.png") no-repeat scroll 100% 100% rgba(0, 0, 0, 0);
+    /*bottom: -42px;*/
+    color: #ccc;
+    font-size: 1.35em;
+    font-style: italic;
+    height: 32px;
+    padding-right: 35px;
+    position: absolute;
+    left: 50px;
+    text-align: right;
 }
 
-#SendingInfo input, #drpProvince, #txtAddreess{
-    width:112%;
-    border-radius:2px
+.news-heading {
+    background: none repeat scroll 0 0 #fff;
+    min-height: 65px;
+    padding: 15px 0 20px 0;
+    position: relative;
 }
 
-.shipping_item{
-    border:1px solid #d7d7d7;
-    border-radius:2px;
-    padding:20px 5px;
-    min-height:100px;
-    border-collapse: separate;
-border-spacing: 2px;
+.news-heading h3 {
+    background: url("/images/article-heading-long.png") no-repeat scroll 0 2px rgba(0, 0, 0, 0);
+    background-size: cover;
+    color: #222;
+    /*font: 22px/28px Arial,Helvetica,sans-serif;*/
+    min-height: 22px;
+    padding-right: 95px;
 }
 
-.foot{
-padding:3%
+.news-heading .news-date {
+    background: url("/images/article-cal.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #999;
+    display: block;
+    font-size: 11pt;
+    font-weight: normal;
+    letter-spacing: -1px;
+    line-height: 1em;
+    padding: 26px 7px 0 9px;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    right: 35px;
+    width: 48px;
+    height: 70px;
+}
+
+.news-box p {
+    font-size: 13pt;
+    margin: 0 25px 0 15px;
+}
+
+.news-section .well {
+    padding-top: 0;
 }
 
 

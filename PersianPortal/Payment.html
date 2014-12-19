@@ -1,0 +1,292 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Website Title & Description for Search Engine purposes -->
+    <title> پورتال جامع پارسی زبانان </title>
+    <meta name="description" content="Learn how to code your first responsive website with the new Twitter Bootstrap 3.">
+
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap-rtl.css">
+    <!--<link href="css/bootstrap-glyphicons.css" rel="stylesheet">-->
+
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Include Modernizr in the head, before any other Javascript -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+
+</head>
+<body>
+
+    <div class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+
+            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+            <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <ul class="nav navbar-nav nav">
+                <li> <a href="/Shopping.html"><span id="ShoppingCartNum" class="label label-warning pull-right" style="display:none"></span> &nbsp;&nbsp;&nbsp;&nbsp; <strong class="fa fa-fw fa-shopping-cart"></strong> سبد خرید  </a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-user"></span> حساب من <strong class="caret"></strong></a>
+
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a id="kk" href="#" style="background-color:none"><span class="fa fa-wrench"></span> تنظیمات</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><span class="fa fa-refresh"></span> به روز رسانی پروفایل</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><span class="fa fa-briefcase"></span> پرداخت</a>
+                        </li>
+
+                        <li class="divider"></li>
+
+                        <li>
+                            <a href="#"><span class="fa fa-sign-out"></span> خروج</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+
+            <div class="navbar-brand"><!--<img src="images/logo.png" alt="Your Logo">--> پورتال جامع پارسی زبانان</div>
+
+
+            <div class="container">
+                <form class="navbar-form" id="search-box">
+                    <div class="input-group" style="display:table">
+                        <span class="input-group-btn">
+                            <button type="submit" class="btn btn-default btn-search"><span class="fa fa-search"></span></button>
+                        </span>
+                        <input type="text" class="form-control" placeholder="جستجو..." id="searchInput">
+                    </div>
+                </form><!-- end navbar-form -->
+            </div>
+
+        </div><!-- end nav-collapse -->
+
+
+    </div><!-- end container -->
+    <div class="container-fluid" style="min-height:670px">
+        <div class="row">
+            <div class="col-lg-2" style="max-width:200px">
+                <ul class="side-menu nav nav-pills nav-stacked">
+                    <li><a href="/PortalHomePage.html"><i class="fa fa-home"></i>صفحه اصلی</a></li>
+                    <li><a href="/News.html"><i class="fa fa-fw fa-microphone"></i>اخبار</a></li>
+                    <li><a href="#"><i class="fa fa-fw fa-comment"></i>اشعار</a></li>
+                    <li><a href="#"><i class="fa fa-fw fa-envelope"></i>ایمیل<span class="label label-warning pull-left">4</span></a></li>
+                    <li><a href="/Dictionary.html"><i class="fa fa-fw fa-fw fa-book"></i>لغت نامه</a></li>
+                    <li class="active"><a href="/OnlineShop.html"><i class="fa fa-fw fa-shopping-cart"></i>فروشگاه</a></li>
+                    <li><a href="#"><i class="fa fa-fw fa-users"></i>شبکه اجتماعی</a></li>
+                </ul>
+            </div>
+
+            <div class="list-group col-lg-10 col-xs-12">
+                <div id="ShoppingProgress" class="progress">
+                    <div class="progress-bar progress-bar-success" style="width: 25%">
+                        <span class="sr-only">ورود به پورتال</span>
+                    </div>
+                    <div class="progress-bar progress-bar-success" style="width: 25%">
+                        <span class="sr-only">اطلاعات ارسال سفارش</span>
+                    </div>
+                    <div class="progress-bar progress-bar-success" style="width: 25%">
+                        <span class="sr-only">بازبینی سفارش</span>
+                    </div>
+                    <div class="progress-bar progress-bar-warning" style="width: 25%">
+                        <span class="sr-only">اطلاعات پرداخت</span>
+                    </div>
+
+                </div>
+
+
+                <table class="flatTable">
+                    <tr class="headingTr">
+                        <td>
+                            <span>مبلغ قابل پرداخت :</span>
+                        </td>
+                        <td>
+                            <span class="al">11,500</span><span class="toman">تومان</span>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="flatTable">
+                    <tr class="titleTr">
+                        <td class="titleTd">شیوه پرداخت اینترنتی</td>
+                        <td colspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="shipping_list col-lg-12" style="padding:0px 25px">
+
+                                <div class="shipping_item " style="border:none">
+                                    <table class="col-lg-12">
+                                        <tbody>
+                                            <tr style="min-height:300px">
+                                                <td class="first">
+                                                    <input value="1" type="radio" id="rbShipping" data-id="1">
+                                                </td>
+                                                <td class="second">
+                                                    <div>
+                                                        <p style="font-size:larger">پرداخت اینترنتی</p>
+                                                        <div id="ctl08_rptPaymentList_dvChooseBank_0" class="choose">
+                                                            انتخاب درگاه پرداخت :&nbsp;&nbsp;<span class="wiki" data-id="1429">( پرداخت از طریق کلیه کارت های عضو شتاب )</span>
+                                                            <ul id="rbBankType" disabled="disabled" class="aspNetDisabled">
+                                                                <li><span class="aspNetDisabled"><input id="rbBankType_0" type="radio" name="ctl08$rptPaymentList$ctl00$rbBankType" value="2" disabled="disabled"><label for="rbBankType_0"> درگاه پرداخت اینترنتی بانک پارسیان</label></span></li>
+                                                                <li><span class="aspNetDisabled"><input id="rbBankType_1" type="radio" name="ctl08$rptPaymentList$ctl00$rbBankType" value="1" disabled="disabled"><label for="rbBankType_1"> درگاه پرداخت اینترنتی بانک ملت</label></span></li>
+
+                                                            </ul>
+                                                        </div>
+                                                        <p class="desc"></p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="shipping_item " style="border:none">
+                                    <table>
+                                        <colgroup>
+                                            <col class="w46">
+                                            <col class="w1164">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td class="first">
+                                                    <input value="4" name="ctl08$rptPaymentList$ctl01$PaymentTypeGroup" type="radio" id="ctl08_rptPaymentList_rbPaymentType_1" class="bank">
+                                                </td>
+                                                <td class="second">
+                                                    <div>
+                                                        <p style="font-size:larger">پرداخت در محل</p>
+
+                                                        <p class="desc">در حال حاضر مشتریانی که سفارش آن ها از طریق تحویل اکسپرس دیجی کالا ارسال می شود، می توانند وجه سفارش خود را بصورت نقدی یا با استفاده از کارت بانکی خود در محل دریافت پرداخت نماید.</p>
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="shipping_item " style="border:none">
+                                    <div id="itempay" class="payment_item">
+                                        <table>
+                                            <colgroup>
+                                                <col class="w46">
+                                                <col class="w1164">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="first">
+                                                        <input value="2" name="ctl08$rptPaymentList$ctl02$PaymentTypeGroup" type="radio" id="ctl08_rptPaymentList_rbPaymentType_2" class="bank">
+                                                    </td>
+                                                    <td class="second">
+                                                        <div>
+                                                            <p style="font-size:larger">کارت به کارت</p>
+
+                                                            <p class="desc">شما می توانید وجه سفارش خود را بصورت انتقال وجه کارت به کارت پرداخت نموده و حداکثر تا 24 ساعت پس از سفارش اطلاعات آن را ثبت نمایید.</p>
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="shipping_item " style="border:none">
+                                    <div id="itempay" class="payment_item">
+                                        <table>
+                                            <colgroup>
+                                                <col class="w46">
+                                                <col class="w1164">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="first">
+                                                        <input value="3" name="ctl08$rptPaymentList$ctl03$PaymentTypeGroup" type="radio" id="ctl08_rptPaymentList_rbPaymentType_3" class="bank">
+                                                    </td>
+                                                    <td class="second">
+                                                        <div>
+                                                            <p style="font-size:larger">واریز به حساب</p>
+
+                                                            <p class="desc">شما می توانید وجه سفارش خود را از طریق مراجعه به شعب بانک به حساب شرکت فن آوازه واریز کرده و تا حداکثر 24 ساعت پس از سفارش اطلاعات آن را ثبت نمایید.</p>
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </td>
+
+
+                    </tr>
+
+                </table>
+
+
+
+
+                <div class="foot col-lg-8 col-lg-offset-5 col-xs-offset-4">
+                    <a class="btn btn-primary btn-small" href="/PortalHomePage.html" data-dismiss="modal">پرداخت  </a>
+                    <a class="btn btn-default" href="/PortalHomePage.html" data-dismiss="modal">حذف سفارش </a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+    <footer></footer>
+
+    <!-- All Javascript at the bottom of the page for faster page loading -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+    <script>
+        $(".choose")
+    </script>
+
+</body>
+</html>
