@@ -1,0 +1,1517 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Website Title & Description for Search Engine purposes -->
+    <title> Bootstrap 3 یادگیری </title>
+    <meta name="description" content="Learn how to code your first responsive website with the new Twitter Bootstrap 3.">
+
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap-rtl.css">
+    <!--<link href="css/bootstrap-glyphicons.css" rel="stylesheet">-->
+
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Include Modernizr in the head, before any other Javascript -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+
+</head>
+<body>
+
+    <div class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+
+            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+            <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <ul class="nav navbar-nav nav">
+                <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span id="ShoppingCartNum" class="label label-warning pull-right" style="display:none"></span> &nbsp;&nbsp;&nbsp;&nbsp; <strong class="fa fa-fw fa-shopping-cart"></strong> سبد خرید  </a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong class="caret"></strong> حساب من <span class="fa fa-user"></span></a>
+
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a id="kk" href="#" style="background-color:none"><span class="fa fa-wrench"></span> تنظیمات</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><span class="fa fa-refresh"></span> به روز رسانی پروفایل</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><span class="fa fa-briefcase"></span> پرداخت</a>
+                        </li>
+
+                        <li class="divider"></li>
+
+                        <li>
+                            <a href="#"><span class="fa fa-sign-out"></span> خروج</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="navbar-brand"><!--<img src="images/logo.png" alt="Your Logo">--> پورتال جامع پارسی زبانان</div>
+
+
+            <div class="container">
+                <form class="navbar-form" id="search-box">
+                    <div class="input-group" style="display:table">
+                        <span class="input-group-btn">
+                            <button type="submit" class="btn btn-default btn-search"><span class="fa fa-search"></span></button>
+                        </span>
+                        <input type="text" class="form-control" placeholder="جستجو..." id="searchInput">
+                    </div>
+                </form><!-- end navbar-form -->
+            </div>
+
+        </div><!-- end nav-collapse -->
+
+
+    </div><!-- end container -->
+    <div class="container-fluid" style="min-height:670px">
+        <div class="row">
+            <div class="col-lg-2" style="max-width:200px">
+                <ul class="side-menu nav nav-pills nav-stacked">
+                    <li class="active"><a href="/index.html"><i class="fa fa-home"></i>صفحه اصلی</a></li>
+                    <li><a href="/News.html"><i class="fa fa-fw fa-microphone"></i>اخبار</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-comment"></i>اشعار</a>
+                        <ul class="dropdown-menu" style="right:100%;top:0%">
+                            <li>
+                                <a id="kk" href="/Hafez.html" style="background-color:none"> فال حافظ</a>
+                            </li>
+                            <li>
+                                <a id="kk" href="/Ghazal.html" style="background-color:none"> غزل</a>
+                            </li>
+
+                            <li>
+                                <a href="/ShereNo.html">شعر نو</a>
+                            </li>
+
+                            <li>
+                                <a href="/Robaii.html"> دوبیتی و رباعی</a>
+                            </li>
+
+                            <li>
+                                <a href="/Masnavi.html"> مثنوی</a>
+                            </li>
+
+                            <li>
+                                <a href="/Nasr.html"> نثر</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li><a href="/Outlook Web Access.htm"><i class="fa fa-fw fa-envelope"></i>ایمیل<span class="label label-warning pull-left">4</span></a></li>
+                    <li><a href="/Dictionary.html"><i class="fa fa-fw fa-fw fa-book"></i>لغت نامه</a></li>
+                    <li><a href="/OnlineShop.html"><i class="fa fa-fw fa-shopping-cart"></i>فروشگاه</a></li>
+                    <li><a href="/SocialNetwork.html"><i class="fa fa-fw fa-users"></i>شبکه اجتماعی</a></li>
+                </ul>
+            </div>
+
+            <form class="col-lg-6 col-lg-offset-4 " role="form">
+                <label class="radio-inline">
+                    همه<input checked="checked" type="radio" name="optradio" onclick="showAll()">
+                </label>
+                <label class="radio-inline" onclick="HideOthersMolana()">
+                    مولانا<input type="radio" name="optradio">
+                </label>
+                <label class="radio-inline" onclick="HideOthersFerdosi()">
+                    فردوسی<input type="radio" name="optradio">
+                </label>
+            </form>
+
+            <div class="col-lg-10">
+                <div class="row news-box" id="Molana">
+                    <div class=" col-lg-8 col-lg-offset-2" style="padding: 10px 30px 20px 30px !important">
+                        <div class="news-heading">
+                            <h3>
+                                <a href="#"></a>
+                                <span> 	ای آسمان این چرخ من زان ماه رو آموختم / مولانا جلال الدین رومی</span>
+                                <span class="news-date">
+                                    <strong>مولانا</strong>
+                                </span>
+                            </h3>
+                        </div>
+                        
+                        <div class=WordSection1 dir=RTL>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span dir=LTR style='font-size:16.0pt;mso-bidi-font-family:
+"B Nazanin";color:#FF40FF;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm;mso-bidi-language:FA'><o:p>&nbsp;</o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm;
+mso-ansi-language:AR-SA'>ا&#1740; آسمان ا&#1740;ن چرخ من زان ماه رو آموختم</span><span lang=FA style='font-family:"B Nazanin";border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm;mso-bidi-language:FA'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=FA style='font-family:"B Nazanin";border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm;mso-bidi-language:FA'><o:p>&nbsp;</o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm;
+mso-ansi-language:AR-SA'>خورش&#1740;د او را ذره</span><span lang=FA
+                                                            style='font-family:"B Nazanin";mso-hansi-font-family:Helvetica;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm;mso-bidi-language:FA'>‌</span><span lang=AR-SA style='font-family:"B Nazanin";border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm;mso-ansi-language:AR-SA'>
+                                    ام ا&#1740;ن
+                                    رقص از او آموختم
+                                </span><span lang=FA style='font-family:"B Nazanin";border:
+none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm;
+mso-bidi-language:FA'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=FA style='font-family:"B Nazanin";border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm;mso-bidi-language:FA'><o:p>&nbsp;</o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm;
+mso-ansi-language:AR-SA'>
+                                    ا&#1740; مه نقاب رو&#1740; او ا&#1740; آب جان در جو&#1740;
+                                    او
+                                </span><span lang=FA style='font-family:"B Nazanin";border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm;mso-bidi-language:FA'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=FA style='font-family:"B Nazanin";border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm;mso-bidi-language:FA'><o:p>&nbsp;</o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm;
+mso-ansi-language:AR-SA'>بر رو دو&#1740;دن سو&#1740; او زان آب جو آموختم</span><span lang=FA style='font-family:"B Nazanin";border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm;mso-bidi-language:FA'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=FA style='font-family:"B Nazanin";border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm;mso-bidi-language:FA'><o:p>&nbsp;</o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm;
+mso-ansi-language:AR-SA'>گلشن هم&#1740;</span><span lang=FA style='font-family:
+"B Nazanin";mso-hansi-font-family:Helvetica;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm;mso-bidi-language:FA'>‌</span><span lang=AR-SA style='font-family:"B Nazanin";border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm;mso-ansi-language:AR-SA'>
+                                    گو&#1740;د
+                                    مرا کا&#1740;ن نافه چون دزد&#1740;ده
+                                </span><span lang=FA style='font-family:
+"B Nazanin";mso-hansi-font-family:Helvetica;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm;mso-bidi-language:FA'>‌</span><span lang=AR-SA style='font-family:"B Nazanin";border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm;mso-ansi-language:AR-SA'>ا&#1740;</span><span lang=FA style='font-family:"B Nazanin";border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm;mso-bidi-language:FA'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=FA style='font-family:"B Nazanin";border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm;mso-bidi-language:FA'><o:p>&nbsp;</o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm;
+mso-ansi-language:AR-SA'>
+                                    من ش&#1740;ر&#1740; و نافه بر&#1740; ز آهو&#1740; هو
+                                    آموختم
+                                </span><span lang=FA style='font-family:"B Nazanin";border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm;mso-bidi-language:FA'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=FA style='font-family:"B Nazanin";border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm;mso-bidi-language:FA'><o:p>&nbsp;</o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm;
+mso-ansi-language:AR-SA'>از باغ و از عرجون او وز طره م&#1740;گون او</span><span lang=FA style='font-family:"B Nazanin";border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm;mso-bidi-language:FA'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=FA style='font-family:"B Nazanin";border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm;mso-bidi-language:FA'><o:p>&nbsp;</o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm;
+mso-ansi-language:AR-SA'>ا&#1740;نک رسن باز&#1740; خوش همچون کدو آموختم</span><span lang=FA style='font-family:"B Nazanin";border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm;mso-bidi-language:FA'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=FA style='font-family:"B Nazanin";border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm;mso-bidi-language:FA'><o:p>&nbsp;</o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm;
+mso-ansi-language:AR-SA'>از نقش</span><span lang=FA style='font-family:"B Nazanin";
+mso-hansi-font-family:Helvetica;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm;mso-bidi-language:FA'>‌</span><span lang=AR-SA
+                                                                    style='font-family:"B Nazanin";border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm;mso-ansi-language:AR-SA'>
+                                    ها&#1740; ا&#1740;ن
+                                    جهان هم چشم بستم هم دهان
+                                </span><span lang=FA style='font-family:"B Nazanin";
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm;
+mso-bidi-language:FA'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=FA style='font-family:"B Nazanin";border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm;mso-bidi-language:FA'><o:p>&nbsp;</o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm;
+mso-ansi-language:AR-SA'>تا نقش بند&#1740; عجب ب&#1740;</span><span lang=FA
+                                                                    style='font-family:"B Nazanin";mso-hansi-font-family:Helvetica;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm;mso-bidi-language:FA'>‌</span><span lang=AR-SA style='font-family:"B Nazanin";border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm;mso-ansi-language:AR-SA'>
+                                    رنگ و
+                                    بو آموختم
+                                </span><span lang=FA style='font-family:"B Nazanin";border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm;mso-bidi-language:FA'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=FA style='font-family:"B Nazanin";border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm;mso-bidi-language:FA'><o:p>&nbsp;</o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm;
+mso-ansi-language:AR-SA'>د&#1740;دم گشاد داد او وان جود و آن ا&#1740;جاد او</span><span lang=FA style='font-family:"B Nazanin";border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm;mso-bidi-language:FA'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=FA style='font-family:"B Nazanin";border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm;mso-bidi-language:FA'><o:p>&nbsp;</o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm;
+mso-ansi-language:AR-SA'>من دادن جان دم به دم زان دادخو آموختم</span><span lang=FA style='font-family:"B Nazanin";border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm;mso-bidi-language:FA'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=FA style='font-family:"B Nazanin";border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm;mso-bidi-language:FA'><o:p>&nbsp;</o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm;
+mso-ansi-language:AR-SA'>در خواب ب&#1740;</span><span lang=FA style='font-family:
+"B Nazanin";mso-hansi-font-family:Helvetica;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm;mso-bidi-language:FA'>‌</span><span lang=AR-SA style='font-family:"B Nazanin";border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm;mso-ansi-language:AR-SA'>
+                                    سو م&#1740;
+                                    رو&#1740; در کو&#1740; ب&#1740;
+                                </span><span lang=FA style='font-family:"B Nazanin";
+mso-hansi-font-family:Helvetica;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm;mso-bidi-language:FA'>‌</span><span lang=AR-SA
+                                                                    style='font-family:"B Nazanin";border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm;mso-ansi-language:AR-SA'>کو م&#1740; رو&#1740;</span><span lang=FA style='font-family:"B Nazanin";border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm;mso-bidi-language:FA'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=FA style='font-family:"B Nazanin";border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm;mso-bidi-language:FA'><o:p>&nbsp;</o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;padding:0cm;
+mso-ansi-language:AR-SA'>شش سو مرو وز سو مگو چون غ&#1740;ر سو آموختم</span><span lang=FA style='font-family:"B Nazanin";border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0cm;padding:0cm;mso-bidi-language:FA'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=FA style='font-family:"B Nazanin";border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0cm;padding:0cm;mso-bidi-language:FA'><o:p>&nbsp;</o:p></span>
+                            </p>
+
+                            <p class=MsoNormal align=center dir=RTL style='text-align:center'>
+                                <span lang=AR-SA style='font-family:"Times New Roman",serif;mso-ascii-font-family:
+Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'><o:p>&nbsp;</o:p></span>
+                            </p>
+
+                        </div>
+
+
+                        <div class="dashed-hr"></div>
+                    </div>
+                </div>
+                <div class="row news-box" id="Molana1">
+                    <div class=" col-lg-8 col-lg-offset-2" style="padding: 10px 30px 20px 30px !important">
+                        <div class="news-heading">
+                            <h3>
+                                <a href="#"></a>
+                                <span> 	 	دل آواره از خویش سفر کرده / مولانا جلال الدین رومی</span>
+                                <span class="news-date">
+                                    <strong>مولانا</strong>
+                                </span>
+                            </h3>
+                        </div>
+
+                        <div class=WordSection1 dir=RTL>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=FA style='font-family:"B Nazanin";border:none'>
+                                    <span style='border:none'>ا</span>
+                                </span><span lang=AR-SA style='font-family:"B Nazanin";
+border:none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>&#1740; جان تو جانم را از خو&#1740;ش خبر کرده</span>
+                                </span><span lang=FA style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'><span lang=FA style='font-family:"B Nazanin";border:none'><o:p>&nbsp;</o:p></span></p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        اند&#1740;شه
+                                        تو هر دم در بنده اثر کرده
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";
+border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'><span lang=FA style='font-family:"B Nazanin";border:none'><o:p>&nbsp;</o:p></span></p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        ا&#1740;
+                                        هر چه ب&#1740;ند&#1740;ش&#1740; در خاطر تو آ&#1740;د
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'><span lang=FA style='font-family:"B Nazanin";border:none'><o:p>&nbsp;</o:p></span></p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        بر
+                                        بنده همان لحظه آن چ&#1740;ز گذر کرده
+                                    </span>
+                                </span><span lang=FA
+                                             style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'><span lang=FA style='font-family:"B Nazanin";border:none'><o:p>&nbsp;</o:p></span></p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        از
+                                        ش&#1740;وه و ناز تو مشغول شده<span style='border:none'> جانم</span>
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'><span lang=FA style='font-family:"B Nazanin";border:none'><o:p>&nbsp;</o:p></span></p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        مکر
+                                        تو به پنهان&#1740; خود کار دگر کرده
+                                    </span>
+                                </span><span lang=FA
+                                             style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'><span lang=FA style='font-family:"B Nazanin";border:none'><o:p>&nbsp;</o:p></span></p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        بر
+                                        &#1740;اد لب تو ن&#1740; هر صبح بنال&#1740;ده
+                                    </span>
+                                </span><span lang=FA
+                                             style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'><span lang=FA style='font-family:"B Nazanin";border:none'><o:p>&nbsp;</o:p></span></p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        عشقت
+                                        دهن ن&#1740; را پرقند و شکر کرده
+                                    </span>
+                                </span><span lang=FA style='font-family:
+"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'><span lang=FA style='font-family:"B Nazanin";border:none'><o:p>&nbsp;</o:p></span></p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        از
+                                        چهره چون ماهت وز قد و کمرگاهت
+                                    </span>
+                                </span><span lang=FA style='font-family:
+"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'><span lang=FA style='font-family:"B Nazanin";border:none'><o:p>&nbsp;</o:p></span></p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        چون
+                                        ماه نو ا&#1740;ن جانم خود را چو قمر کرده
+                                    </span>
+                                </span><span lang=FA
+                                             style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'><span lang=FA style='font-family:"B Nazanin";border:none'><o:p>&nbsp;</o:p></span></p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        خود
+                                        را چو کمر کردم باشد به م&#1740;ان آ&#1740;&#1740;
+                                    </span>
+                                </span><span lang=FA
+                                             style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'><span lang=FA style='font-family:"B Nazanin";border:none'><o:p>&nbsp;</o:p></span></p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        ا&#1740;
+                                        چشم تو سو&#1740; من از خشم نظر کرده
+                                    </span>
+                                </span><span lang=FA
+                                             style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'><span lang=FA style='font-family:"B Nazanin";border:none'><o:p>&nbsp;</o:p></span></p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        از
+                                        <span style='border:none'>خشم نظر کرد&#1740; دل ز&#1740;ر و زبر کرد&#1740;</span>
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'><span lang=FA style='font-family:"B Nazanin";border:none'><o:p>&nbsp;</o:p></span></p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        تا
+                                        ا&#1740;ن دل آواره از خو&#1740;ش سفر کرده
+                                    </span>
+                                </span><span lang=FA
+                                             style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=MsoNormal align=center dir=RTL style='text-align:center'>
+                                <span dir=LTR><o:p>&nbsp;</o:p></span>
+                            </p>
+
+                        </div>
+
+                        <div class="dashed-hr"></div>
+                    </div>
+                </div>
+                <div class="row news-box" id="Ferdosi">
+                    <div class=" col-lg-8 col-lg-offset-2" style="padding: 10px 30px 20px 30px !important">
+                        <div class="news-heading">
+                            <h3>
+                                <a href="#"></a>
+                                <span> 	گفتار اندر ستایش پیغمبر/فردوسی</span>
+                                <span class="news-date">
+                                    <strong>فردوسی</strong>
+                                </span>
+                            </h3>
+                        </div>
+
+                        <div class=WordSection1 dir=RTL>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        ترا
+                                        دانش و د&#1740;ن رهاند درست
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";
+border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        در
+                                        رستگار&#1740; ببا&#1740;دت جست
+                                    </span>
+                                </span><span lang=FA style='font-family:
+"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        وگر
+                                        دل نخواه&#1740; که باشد نژند
+                                    </span>
+                                </span><span lang=FA style='font-family:
+"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        نخواه&#1740;
+                                        که دا&#1740;م بو&#1740; مستمند
+                                    </span>
+                                </span><span lang=FA style='font-family:
+"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        به
+                                        گفتار پ&#1740;غمبرت راه جو&#1740;
+                                    </span>
+                                </span><span lang=FA style='font-family:
+"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        دل
+                                        از ت&#1740;رگ&#1740;ها بد&#1740;ن آب شو&#1740;
+                                    </span>
+                                </span><span lang=FA
+                                             style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        چه
+                                        گفت<span style='border:none'> آن خداوند تنز&#1740;ل و وح&#1740;</span>
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        خداوند
+                                        امر و خداوند نه&#1740;
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";
+border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        که
+                                        خورش&#1740;د بعد از رسولان مه
+                                    </span>
+                                </span><span lang=FA style='font-family:
+"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        نتاب&#1740;د
+                                        بر کس ز بوبکر به
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";
+border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        عمر
+                                        کرد اسلام را آشکار
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";
+border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        ب&#1740;اراست
+                                        گ&#1740;ت&#1740; چو باغ بهار
+                                    </span>
+                                </span><span lang=FA style='font-family:
+"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        پس
+                                        از هر دوان بود عثمان گز&#1740;ن
+                                    </span>
+                                </span><span lang=FA style='font-family:
+"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        خداوند
+                                        شرم و خداوند د&#1740;ن
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";
+border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        چهارم
+                                        عل&#1740; بود جفت بتول
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";
+border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        که
+                                        او را به خوب&#1740; ستا&#1740;د رسول
+                                    </span>
+                                </span><span lang=FA
+                                             style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        که
+                                        من <span style='border:none'>شهر علمم عل&#1740;م در ست</span>
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        درست
+                                        ا&#1740;ن سخن قول پ&#1740;غمبرست
+                                    </span>
+                                </span><span lang=FA style='font-family:
+"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        گواه&#1740;
+                                        دهم کا&#1740;ن سخنها ز اوست
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";
+border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        تو
+                                        گو&#1740;&#1740; دو گوشم پرآواز اوست
+                                    </span>
+                                </span><span lang=FA
+                                             style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        عل&#1740;
+                                        را چن&#1740;ن گفت و د&#1740;گر هم&#1740;ن
+                                    </span>
+                                </span><span lang=FA
+                                             style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        کز&#1740;شان
+                                        قو&#1740; شد به هر گونه د&#1740;ن
+                                    </span>
+                                </span><span lang=FA style='font-family:
+"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        نب&#1740;
+                                        آفتاب و صحابان چو ماه
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";
+border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        به
+                                        هم بسته
+                                    </span>
+                                </span><span lang=AR-SA style='font-family:"Sakkal Majalla";
+border:none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>&#1620;</span>
+                                </span><span lang=AR-SA style='font-family:
+"B Nazanin";border:none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        <span style='border:none'>
+                                            &#1740;کدگر<span style='border:none'>
+                                                <span style='border:none'>
+                                                    راست<span style='border:none'>
+                                                        <span style='border:none'>راه</span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        منم
+                                        بنده
+                                    </span>
+                                </span><span lang=AR-SA style='font-family:"Sakkal Majalla";
+border:none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>&#1620;</span>
+                                </span><span lang=AR-SA style='font-family:
+"B Nazanin";border:none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        <span style='border:none'>
+                                            اهل<span style='border:none'>
+                                                <span style='border:none'>
+                                                    ب&#1740;ت<span style='border:none'>
+                                                        <span style='border:
+none'>نب&#1740;</span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </span><span lang=FA
+                                             style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'><span style='border:none'>ستا&#1740;نده</span></span><span lang=AR-SA style='font-family:"Sakkal Majalla";border:none;mso-ansi-language:
+AR-SA;mso-bidi-language:AR-SA'><span style='border:none'>&#1620;</span></span><span lang=AR-SA style='font-family:"B Nazanin";border:none;mso-ansi-language:AR-SA;
+mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        <span style='border:none'>
+                                            خاک<span style='border:none'>
+                                                <span style='border:none'>
+                                                    و<span style='border:none'>
+                                                        <span style='border:none'>
+                                                            پا&#1740;<span style='border:none'>
+                                                                <span style='border:
+none'>وص&#1740;</span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        حک&#1740;م
+                                        ا&#1740;ن جهان را چو در&#1740;ا نهاد
+                                    </span>
+                                </span><span lang=FA
+                                             style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        برانگ&#1740;خته
+                                        موج ازو تندباد
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";
+border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        چو
+                                        هفتاد کشت&#1740; برو ساخته
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";
+border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        همه
+                                        بادبانها برافراخته
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";
+border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        &#1740;ک&#1740;
+                                        پهن کشت&#1740; بسان عروس
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";
+border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        ب&#1740;اراسته
+                                        همچو چشم خروس
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";
+border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        محمد
+                                        بدو اندرون با عل&#1740;
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";
+border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        همان
+                                        اهل ب&#1740;ت نب&#1740; و ول&#1740;
+                                    </span>
+                                </span><span lang=FA
+                                             style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        خردمند
+                                        کز دور در&#1740;ا بد&#1740;د
+                                    </span>
+                                </span><span lang=FA style='font-family:
+"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        کرانه
+                                        نه پ&#1740;دا و بن ناپد&#1740;د
+                                    </span>
+                                </span><span lang=FA style='font-family:
+"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        بدانست
+                                        کو م<span style='border:none'>وج خواهد زدن</span>
+                                    </span>
+                                </span><span lang=FA
+                                             style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        کس
+                                        از غرق ب&#1740;رون نخواهد شدن
+                                    </span>
+                                </span><span lang=FA style='font-family:
+"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        به
+                                        دل گفت اگر با نب&#1740; و وص&#1740;
+                                    </span>
+                                </span><span lang=FA
+                                             style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        شوم
+                                        غرقه دارم دو &#1740;ار وف&#1740;
+                                    </span>
+                                </span><span lang=FA style='font-family:
+"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        همانا
+                                        که باشد مرا دستگ&#1740;ر
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";
+border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        خداوند
+                                        تاج و لوا و سر&#1740;ر
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";
+border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        خداوند
+                                        جو&#1740; م&#1740; و انگب&#1740;ن
+                                    </span>
+                                </span><span lang=FA style='font-family:
+"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        همان
+                                        چشمه
+                                    </span>
+                                </span><span lang=AR-SA style='font-family:"Sakkal Majalla";
+border:none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>&#1620;</span>
+                                </span><span lang=AR-SA style='font-family:
+"B Nazanin";border:none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        <span style='border:none'>
+                                            ش&#1740;ر<span style='border:
+none'>
+                                                <span style='border:none'>
+                                                    و<span style='border:none'>
+                                                        <span style='border:none'>ماء<span style='border:none'> <span style='border:none'>مع&#1740;ن</span></span></span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        اگر
+                                        چشم دار&#1740; به د&#1740;گر سرا&#1740;
+                                    </span>
+                                </span><span lang=FA
+                                             style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        به
+                                        نزد نب&#1740; و عل&#1740; گ&#1740;ر جا&#1740;
+                                    </span>
+                                </span><span lang=FA
+                                             style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        گرت
+                                        ز&#1740;ن بد آ&#1740;د <span style='border:none'>گناه منست</span>
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        چن&#1740;ن
+                                        است و ا&#1740;ن د&#1740;ن و راه منست
+                                    </span>
+                                </span><span lang=FA
+                                             style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        بر&#1740;ن
+                                        زادم و هم بر&#1740;ن بگذرم
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";
+border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        چنان
+                                        دان که خاک پ&#1740; ح&#1740;درم
+                                    </span>
+                                </span><span lang=FA style='font-family:
+"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        دلت
+                                        گر به راه خطا ما&#1740;لست
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";
+border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        ترا
+                                        دشمن اندر جهان خود دلست
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";
+border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        نباشد
+                                        جز از ب&#1740;
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";
+mso-hansi-font-family:Helvetica;border:none'>‌</span><span lang=AR-SA
+                                                           style='font-family:"B Nazanin";border:none;mso-ansi-language:AR-SA;mso-bidi-language:
+AR-SA'><span style='border:none'>پدر دشمنش</span></span><span lang=FA
+                                                              style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        که
+                                        &#1740;زدان به آتش بسوزد تنش
+                                    </span>
+                                </span><span lang=FA style='font-family:
+"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        هر
+                                        آنکس که در جانش بغض عل&#1740;ست
+                                    </span>
+                                </span><span lang=FA style='font-family:
+"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        ازو
+                                        زارتر در جهان زار ک&#1740;ست
+                                    </span>
+                                </span><span lang=FA style='font-family:
+"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        نگر
+                                        <span style='border:none'>تا ندار&#1740; به باز&#1740; جهان</span>
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        نه
+                                        برگرد&#1740; از ن&#1740;ک پ&#1740; همرهان
+                                    </span>
+                                </span><span lang=FA
+                                             style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        همه
+                                        ن&#1740;ک&#1740; ات با&#1740;د آغاز کرد
+                                    </span>
+                                </span><span lang=FA
+                                             style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        چو
+                                        با ن&#1740;کنامان بو&#1740; همنورد
+                                    </span>
+                                </span><span lang=FA style='font-family:
+"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        از
+                                        ا&#1740;ن در سخن چند رانم هم&#1740;
+                                    </span>
+                                </span><span lang=FA
+                                             style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:
+none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        همانا
+                                        کرانش ندانم هم&#1740;
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";
+border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body align=center dir=RTL style='text-align:center;direction:rtl;
+unicode-bidi:embed'><span lang=FA style='font-family:"B Nazanin";border:none'><o:p>&nbsp;</o:p></span></p>
+
+                            <p class=MsoNormal align=center dir=RTL style='text-align:center'>
+                                <span dir=LTR><o:p>&nbsp;</o:p></span>
+                            </p>
+
+                        </div>
+                   
+                        <div class="dashed-hr"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row text-center">
+                <nav>
+                    <ul class="pagination">
+                        <li class="disabled"><a href="#"><span aria-hidden="true"></span><span class="sr-only"><span class="arrows">&laquo;</span>قبلی</span></a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#"><span aria-hidden="true"></span><span class="sr-only">بعدی<span class="arrows">&raquo;</span></span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+
+    <footer></footer>
+
+    <!-- All Javascript at the bottom of the page for faster page loading -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+    <script>
+        function HideOthersMolana() {
+            $("#Molana").css("display", "block");
+            $("#Molana1").css("display", "block");
+            $("#Ferdosi").css("display", "none");
+        }
+        function HideOthersFerdosi() {
+            $("#Ferdosi").css("display", "block");
+            $("#Molana").css("display", "none");
+            $("#Molana1").css("display", "none");
+        }
+        function showAll() {
+            $("#Molana").css("display", "block");
+            $("#Molana1").css("display", "block");
+            $("#Ferdosi").css("display", "block");
+        }
+    </script>
+</body>
+</html>

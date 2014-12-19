@@ -1,0 +1,450 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Website Title & Description for Search Engine purposes -->
+    <title> Bootstrap 3 یادگیری </title>
+    <meta name="description" content="Learn how to code your first responsive website with the new Twitter Bootstrap 3.">
+
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap-rtl.css">
+    <!--<link href="css/bootstrap-glyphicons.css" rel="stylesheet">-->
+
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Include Modernizr in the head, before any other Javascript -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+
+</head>
+<body>
+
+    <div class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+
+            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+            <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <ul class="nav navbar-nav nav">
+                <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span id="ShoppingCartNum" class="label label-warning pull-right" style="display:none"></span> &nbsp;&nbsp;&nbsp;&nbsp; <strong class="fa fa-fw fa-shopping-cart"></strong> سبد خرید  </a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong class="caret"></strong> حساب من <span class="fa fa-user"></span></a>
+
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a id="kk" href="#" style="background-color:none"><span class="fa fa-wrench"></span> تنظیمات</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><span class="fa fa-refresh"></span> به روز رسانی پروفایل</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><span class="fa fa-briefcase"></span> پرداخت</a>
+                        </li>
+
+                        <li class="divider"></li>
+
+                        <li>
+                            <a href="#"><span class="fa fa-sign-out"></span> خروج</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="navbar-brand"><!--<img src="images/logo.png" alt="Your Logo">--> پورتال جامع پارسی زبانان</div>
+
+
+            <div class="container">
+                <form class="navbar-form" id="search-box">
+                    <div class="input-group" style="display:table">
+                        <span class="input-group-btn">
+                            <button type="submit" class="btn btn-default btn-search"><span class="fa fa-search"></span></button>
+                        </span>
+                        <input type="text" class="form-control" placeholder="جستجو..." id="searchInput">
+                    </div>
+                </form><!-- end navbar-form -->
+            </div>
+
+        </div><!-- end nav-collapse -->
+
+
+    </div><!-- end container -->
+    <div class="container-fluid" style="min-height:670px">
+        <div class="row">
+            <div class="col-lg-2" style="max-width:200px">
+                <ul class="side-menu nav nav-pills nav-stacked">
+                    <li class="active"><a href="/index.html"><i class="fa fa-home"></i>صفحه اصلی</a></li>
+                    <li><a href="/News.html"><i class="fa fa-fw fa-microphone"></i>اخبار</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-comment"></i>اشعار</a>
+                        <ul class="dropdown-menu" style="right:100%;top:0%">
+                            <li>
+                                <a id="kk" href="/Hafez.html" style="background-color:none"> فال حافظ</a>
+                            </li>
+                            <li>
+                                <a id="kk" href="/Ghazal.html" style="background-color:none"> غزل</a>
+                            </li>
+
+                            <li>
+                                <a href="/ShereNo.html">شعر نو</a>
+                            </li>
+
+                            <li>
+                                <a href="/Robaii.html"> دوبیتی و رباعی</a>
+                            </li>
+
+                            <li>
+                                <a href="/Masnavi.html"> مثنوی</a>
+                            </li>
+
+                            <li>
+                                <a href="/Nasr.html"> نثر</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li><a href="/Outlook Web Access.htm"><i class="fa fa-fw fa-envelope"></i>ایمیل<span class="label label-warning pull-left">4</span></a></li>
+                    <li><a href="/Dictionary.html"><i class="fa fa-fw fa-fw fa-book"></i>لغت نامه</a></li>
+                    <li><a href="/OnlineShop.html"><i class="fa fa-fw fa-shopping-cart"></i>فروشگاه</a></li>
+                    <li><a href="/SocialNetwork.html"><i class="fa fa-fw fa-users"></i>شبکه اجتماعی</a></li>
+                </ul>
+            </div>
+
+            <form class="col-lg-6 col-lg-offset-4 " role="form">
+                <label class="radio-inline">
+                    همه<input checked="checked" type="radio" name="optradio" onclick="showAll()">
+                </label>
+                <label class="radio-inline" onclick="HideOthersSadi()">
+                    سعدی<input type="radio" name="optradio">
+                </label>
+                <label class="radio-inline" onclick="HideOthersZakani()">
+                    عبید زاکانی<input type="radio" name="optradio">
+                </label>
+            </form>
+
+            <div class="col-lg-10">
+                <div class="row news-box" id="sadi">
+                    <div class=" col-lg-8 col-lg-offset-2" style="padding: 10px 30px 20px 30px !important">
+                        <div class="news-heading">
+                            <h3>
+                                <a href="#"></a>
+                                <span> 	گلستان سعدی</span>
+                                <span class="news-date">
+                                    <strong>سعدی</strong>
+                                </span>
+                            </h3>
+                        </div>
+                        <div class=WordSection1 dir=RTL>
+
+                            <p class=Body dir=RTL style='text-align:right;direction:rtl;unicode-bidi:embed'>
+                                <span lang=FA style='font-family:"B Nazanin";border:none'><o:p>&nbsp;</o:p></span>
+                            </p>
+
+                            <p class=Body dir=RTL style='text-align:right;direction:rtl;unicode-bidi:embed'>
+                                <span lang=FA style='font-family:"B Nazanin";border:none'><o:p>&nbsp;</o:p></span>
+                            </p>
+
+                            <p class=Body dir=RTL style='text-align:right;direction:rtl;unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:none;mso-ansi-language:AR-SA;
+mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        &#1740;اد دارم که در
+                                        ا&#1740;ام طفل&#1740; متعبد بودم&#1740; و شب خ&#1740;ز و مولع زهد و پره&#1740;ز
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";mso-ascii-font-family:Helvetica;
+border:none'><span style='border:none'>. </span></span><span lang=AR-SA
+                                                             style='font-family:"B Nazanin";border:none;mso-ansi-language:AR-SA;mso-bidi-language:
+AR-SA'><span style='border:none'>شب&#1740; در خدمت پدر </span></span><span lang=FA style='font-family:"B Nazanin";mso-ascii-font-family:Helvetica;
+border:none'><span style='border:none'>- </span></span><span lang=AR-SA
+                                                             style='font-family:"B Nazanin";border:none;mso-ansi-language:AR-SA;mso-bidi-language:
+AR-SA'><span style='border:none'>عل&#1740;ه الرحمه</span></span><span lang=FA
+                                                                      style='font-family:"B Nazanin";mso-ascii-font-family:Helvetica;border:none'>
+                                    <span style='border:none'>-</span>
+                                </span><span lang=AR-SA style='font-family:"B Nazanin";
+border:none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        نشسته بودم و همه شب د&#1740;ده بر <span style='border:none'>
+                                            هم
+                                            نبسته و مُصحف عز&#1740;ز در کنار گرفته و طا&#1740;فه ا&#1740; گرد ما خفته
+                                        </span>
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";mso-ascii-font-family:Helvetica;
+border:none'><span style='border:none'>. </span></span><span lang=AR-SA
+                                                             style='font-family:"B Nazanin";border:none;mso-ansi-language:AR-SA;mso-bidi-language:
+AR-SA'><span style='border:none'>پدر را گفتم</span></span><span lang=FA
+                                                                style='font-family:"B Nazanin";mso-ascii-font-family:Helvetica;border:none'>
+                                    <span style='border:none'>:</span>
+                                </span><span lang=AR-SA style='font-family:"B Nazanin";
+border:none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        &#1740;ک&#1740; از ا&#1740;نان سر بر نم&#1740; دارد که
+                                        دوگانه ا&#1740; بگزارد
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";
+mso-ascii-font-family:Helvetica;border:none'><span style='border:none'>. </span></span><span lang=AR-SA style='font-family:"B Nazanin";border:none;mso-ansi-language:AR-SA;
+mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        چنان خواب غفلت برده اند که
+                                        گو&#1740;&#1740; نخفته اند که مرده اند
+                                    </span>
+                                </span><span lang=FA
+                                             style='font-family:"B Nazanin";mso-ascii-font-family:Helvetica;border:none'>
+                                    <span style='border:none'>.</span>
+                                </span><span lang=AR-SA style='font-family:"B Nazanin";
+border:none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>گفت</span>
+                                </span><span lang=FA style='font-family:"B Nazanin";
+mso-ascii-font-family:Helvetica;border:none'><span style='border:none'>: </span></span><span lang=AR-SA style='font-family:"B Nazanin";border:none;mso-ansi-language:AR-SA;
+mso-bidi-language:AR-SA'><span style='border:none'>جان پدر</span></span><span lang=FA style='font-family:"B Nazanin";mso-ascii-font-family:Helvetica;
+border:none'><span style='border:none'>! </span></span><span lang=AR-SA
+                                                             style='font-family:"B Nazanin";border:none;mso-ansi-language:AR-SA;mso-bidi-language:
+AR-SA'>
+                                    <span style='border:none'>
+                                        تو ن&#1740;ز اگر بخفت&#1740; به که در
+                                        پوست&#1740;ن خلق افت&#1740;
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";
+mso-ascii-font-family:Helvetica;border:none'><span style='border:none'>.</span></span><span lang=FA style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body dir=RTL style='text-align:right;direction:rtl;unicode-bidi:embed'>
+                                <span lang=FA style='font-family:"B Nazanin";border:none'><o:p>&nbsp;</o:p></span>
+                            </p>
+
+                            <p class=Body dir=RTL style='text-align:right;direction:rtl;unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:none;mso-ansi-language:AR-SA;
+mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        ن&#1740;ند مـدع&#1740;
+                                        جــــز خو<span style='border:none'>
+                                            &#1740;شتن را<span style='mso-spacerun:yes'></span>که دارد پـــــرده پنــــــدار در
+                                            پ&#1740;ش
+                                        </span>
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";
+border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body dir=RTL style='text-align:right;direction:rtl;unicode-bidi:embed'>
+                                <span lang=FA style='font-family:"B Nazanin";border:none'><o:p>&nbsp;</o:p></span>
+                            </p>
+
+                            <p class=Body dir=RTL style='text-align:right;direction:rtl;unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:none;mso-ansi-language:AR-SA;
+mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        گرت چشم خــدا
+                                        ب&#1740;ن&#1740; ببخشند<span style='mso-spacerun:yes'>    </span>
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";mso-hansi-font-family:Helvetica;
+border:none'>
+                                    ‌‌‌‌<span style='border:none'>
+                                        <span style='mso-spacerun:yes'>
+                                        </span>
+                                    </span>
+                                </span><span lang=AR-SA style='font-family:"B Nazanin";
+border:none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>نب&#1740;ن&#1740; ه&#1740;چ کس عاجز تر از خو&#1740;ش</span>
+                                </span><span lang=FA style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body dir=RTL style='text-align:right;direction:rtl;unicode-bidi:embed'>
+                                <span lang=FA style='font-family:"B Nazanin";border:none'><o:p>&nbsp;</o:p></span>
+                            </p>
+
+                            <p class=Body dir=RTL style='text-align:right;direction:rtl;unicode-bidi:embed'>
+                                <span lang=FA style='font-family:"B Nazanin";border:none'><o:p>&nbsp;</o:p></span>
+                            </p>
+
+                            <p class=MsoNormal dir=RTL><span dir=LTR><o:p>&nbsp;</o:p></span></p>
+
+                        </div>
+                        <div class="dashed-hr"></div>
+                    </div>
+                </div>
+                <div class="row news-box" id="zakani">
+                    <div class=" col-lg-8 col-lg-offset-2" style="padding: 10px 30px 20px 30px !important">
+                        <div class="news-heading">
+                            <h3>
+                                <a href="#"></a>
+                                <span>  اخلاق الاشراف/عبید زاکانی</span>
+                                <span class="news-date">
+                                    <strong>عبید زاکانی</strong>
+                                </span>
+                            </h3>
+                        </div>
+                        <div class=WordSection1 dir=RTL>
+
+                            <p class=Body dir=RTL style='text-align:right;direction:rtl;unicode-bidi:embed'>
+                                <span lang=FA style='font-family:"B Nazanin";border:none'><o:p>&nbsp;</o:p></span>
+                            </p>
+
+                            <p class=Body dir=RTL style='text-align:right;direction:rtl;unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:none;mso-ansi-language:AR-SA;
+mso-bidi-language:AR-SA'><span style='border:none'>نها&#1740;ت خساست</span></span><span lang=FA style='font-family:"B Nazanin";mso-ascii-font-family:Helvetica;
+border:none'><span style='border:none'>: </span></span><span lang=FA
+                                                             style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=Body dir=RTL style='text-align:right;direction:rtl;unicode-bidi:embed'>
+                                <span lang=FA style='font-family:"B Nazanin";border:none'><o:p>&nbsp;</o:p></span>
+                            </p>
+
+                            <p class=Body dir=RTL style='text-align:right;direction:rtl;unicode-bidi:embed'>
+                                <span lang=AR-SA style='font-family:"B Nazanin";border:none;mso-ansi-language:AR-SA;
+mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        بزرگ&#1740; که در ثروت،
+                                        قارون زمان خود بود، اجل فرا رس&#1740;د و ام&#1740;د زندگان&#1740; قطع کرد
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";mso-ascii-font-family:Helvetica;
+border:none'><span style='border:none'>. </span></span><span lang=AR-SA
+                                                             style='font-family:"B Nazanin";border:none;mso-ansi-language:AR-SA;mso-bidi-language:
+AR-SA'><span style='border:none'>جگر</span></span><span lang=FA
+                                                        style='font-family:"B Nazanin";mso-hansi-font-family:Helvetica;border:none'>‌</span><span lang=AR-SA style='font-family:"B Nazanin";border:none;mso-ansi-language:AR-SA;
+mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        گوشگان <span style='border:none'>خود را حاضر کرد</span>
+                                    </span>
+                                </span><span lang=FA
+                                             style='font-family:"B Nazanin";mso-ascii-font-family:Helvetica;border:none'>
+                                    <span style='border:none'>.</span>
+                                </span><span lang=AR-SA style='font-family:"B Nazanin";
+border:none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>گفت</span>
+                                </span><span lang=FA style='font-family:"B Nazanin";
+mso-ascii-font-family:Helvetica;border:none'><span style='border:none'>: </span></span><span lang=AR-SA style='font-family:"B Nazanin";border:none;mso-ansi-language:AR-SA;
+mso-bidi-language:AR-SA'><span style='border:none'>ا&#1740; فرزندان</span></span><span lang=FA style='font-family:"B Nazanin";mso-ascii-font-family:Helvetica;
+border:none'><span style='border:none'>! </span></span><span lang=AR-SA
+                                                             style='font-family:"B Nazanin";border:none;mso-ansi-language:AR-SA;mso-bidi-language:
+AR-SA'><span style='border:none'>روزگار&#1740; دراز در کسب مال، زحمت</span></span><span lang=FA style='font-family:"B Nazanin";mso-hansi-font-family:Helvetica;
+border:none'>‌</span><span lang=AR-SA style='font-family:"B Nazanin";
+border:none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>ها&#1740; سفر و حضر کش&#1740;ده</span>
+                                </span><span lang=FA
+                                             style='font-family:"B Nazanin";mso-hansi-font-family:Helvetica;border:none'>‌</span><span lang=AR-SA style='font-family:"B Nazanin";border:none;mso-ansi-language:AR-SA;
+mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        ام و حلق خود را به سرپنجه
+                                        گرسنگ&#1740; فشرده
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";
+mso-hansi-font-family:Helvetica;border:none'>‌</span><span lang=AR-SA
+                                                           style='font-family:"B Nazanin";border:none;mso-ansi-language:AR-SA;mso-bidi-language:
+AR-SA'>
+                                    <span style='border:none'>
+                                        ام، هرگز از محافظت آن غافل مباش&#1740;د و به
+                                        ه&#1740;چ وجه دست خرج بدان نزن&#1740;د
+                                    </span>
+                                </span><span lang=FA
+                                             style='font-family:"B Nazanin";mso-ascii-font-family:Helvetica;border:none'>
+                                    <span style='border:none'>.</span>
+                                </span><span lang=AR-SA style='font-family:"B Nazanin";
+border:none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        اگر کس&#1740; با شما سخن گو&#1740;د که پدر شما را در خواب
+                                        د&#1740;دم قل&#1740;ه حلوا م&#1740;
+                                    </span>
+                                </span><span lang=FA
+                                             style='font-family:"B Nazanin";mso-hansi-font-family:Helvetica;border:none'>‌</span><span lang=AR-SA style='font-family:"B Nazanin";border:none;mso-ansi-language:AR-SA;
+mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        خو<span style='border:none'>
+                                            اهد،
+                                            هرگز به مکر آن فر&#1740;ب نخور&#1740;د که آن من نگفته باشم و مرده
+                                            چ&#1740;ز&#1740; نخورد
+                                        </span>
+                                    </span>
+                                </span><span lang=FA style='font-family:
+"B Nazanin";mso-ascii-font-family:Helvetica;border:none'>
+                                    <span style='border:none'>.</span>
+                                </span><span lang=AR-SA style='font-family:"B Nazanin";
+border:none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>
+                                        اگر من خود ن&#1740;ز به خواب شما ب&#1740;ا&#1740;م و
+                                        هم&#1740;ن التماس کنم، بدان توجه نبا&#1740;د کرد که آن را خواب و خ&#1740;ال و
+                                        رؤ&#1740;ا خوانند؛ چه بسا که آن را ش&#1740;طان به شما نشان داده باشد
+                                    </span>
+                                </span><span lang=FA style='font-family:"B Nazanin";mso-ascii-font-family:Helvetica;
+border:none'><span style='border:none'>. </span></span><span lang=AR-SA
+                                                             style='font-family:"B Nazanin";border:none;mso-ansi-language:AR-SA;mso-bidi-language:
+AR-SA'>
+                                    <span style='border:none'>
+                                        من آنچه در زندگ&#1740; نخورده باشم در <span style='border:none'>مُردگ&#1740; تمنا نکنم</span>
+                                    </span>
+                                </span><span lang=FA
+                                             style='font-family:"B Nazanin";mso-ascii-font-family:Helvetica;border:none'>
+                                    <span style='border:none'>.</span>
+                                </span><span lang=AR-SA style='font-family:"B Nazanin";
+border:none;mso-ansi-language:AR-SA;mso-bidi-language:AR-SA'>
+                                    <span style='border:none'>ا&#1740;ن بگفت و جان به خزانه مالک دوزخ سپرد</span>
+                                </span><span lang=FA style='font-family:"B Nazanin";mso-ascii-font-family:Helvetica;
+border:none'><span style='border:none'>.</span></span><span lang=FA
+                                                            style='font-family:"B Nazanin";border:none'><o:p></o:p></span>
+                            </p>
+
+                            <p class=MsoNormal dir=RTL><span dir=LTR><o:p>&nbsp;</o:p></span></p>
+
+                        </div>
+
+                        <div class="dashed-hr"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row text-center">
+                <nav>
+                    <ul class="pagination">
+                        <li class="disabled"><a href="#"><span aria-hidden="true"></span><span class="sr-only"><span class="arrows">&laquo;</span>قبلی</span></a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#"><span aria-hidden="true"></span><span class="sr-only">بعدی<span class="arrows">&raquo;</span></span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+
+    <footer></footer>
+
+    <!-- All Javascript at the bottom of the page for faster page loading -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+    <script>
+        function HideOthersSadi() {
+            $("#sadi").css("display", "block");
+            $("#zakani").css("display", "none");
+        }
+        function HideOthersZakani() {
+            $("#zakani").css("display", "block");
+            $("#sadi").css("display", "none");
+        }
+        function showAll() {
+            $("#zakani").css("display", "block");
+            $("#sadi").css("display", "block");
+        }
+    </script>
+</body>
+</html>
