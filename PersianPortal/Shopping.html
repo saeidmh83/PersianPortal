@@ -1,0 +1,443 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Website Title & Description for Search Engine purposes -->
+    <title> پورتال جامع پارسی زبانان </title>
+    <meta name="description" content="Learn how to code your first responsive website with the new Twitter Bootstrap 3.">
+
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap-rtl.css">
+    <!--<link href="css/bootstrap-glyphicons.css" rel="stylesheet">-->
+
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Include Modernizr in the head, before any other Javascript -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+
+</head>
+<body>
+
+    <div class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+
+            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+            <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <ul class="nav navbar-nav nav">
+                <li> <a href="/Shopping.html"><span id="ShoppingCartNum" class="label label-warning pull-right" style="display:none"></span> &nbsp;&nbsp;&nbsp;&nbsp; <strong class="fa fa-fw fa-shopping-cart"></strong> سبد خرید  </a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-user"></span> حساب من <strong class="caret"></strong></a>
+
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a id="kk" href="#" style="background-color:none"><span class="fa fa-wrench"></span> تنظیمات</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><span class="fa fa-refresh"></span> به روز رسانی پروفایل</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><span class="fa fa-briefcase"></span> پرداخت</a>
+                        </li>
+
+                        <li class="divider"></li>
+
+                        <li>
+                            <a href="#"><span class="fa fa-sign-out"></span> خروج</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+
+            <div class="navbar-brand"><!--<img src="images/logo.png" alt="Your Logo">--> پورتال جامع پارسی زبانان</div>
+
+
+            <div class="container">
+                <form class="navbar-form" id="search-box">
+                    <div class="input-group" style="display:table">
+                        <span class="input-group-btn">
+                            <button type="submit" class="btn btn-default btn-search"><span class="fa fa-search"></span></button>
+                        </span>
+                        <input type="text" class="form-control" placeholder="جستجو..." id="searchInput">
+                    </div>
+                </form><!-- end navbar-form -->
+            </div>
+
+        </div><!-- end nav-collapse -->
+
+
+    </div><!-- end container -->
+    <div class="container-fluid" style="min-height:670px">
+        <div class="row">
+            <div class="col-lg-2" style="max-width:200px">
+                <ul class="side-menu nav nav-pills nav-stacked">
+                    <li><a href="/PortalHomePage.html"><i class="fa fa-home"></i>صفحه اصلی</a></li>
+                    <li><a href="/News.html"><i class="fa fa-fw fa-microphone"></i>اخبار</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-comment"></i>اشعار</a>
+                        <ul class="dropdown-menu" style="right:100%;top:0%">
+                            <li>
+                                <a id="kk" href="/Hafez.html" style="background-color:none"> فال حافظ</a>
+                            </li>
+                            <li>
+                                <a id="kk" href="/Ghazal.html" style="background-color:none"> غزل</a>
+                            </li>
+
+                            <li>
+                                <a href="/ShereNo.html">شعر نو</a>
+                            </li>
+
+                            <li>
+                                <a href="/Robaii.html"> دوبیتی و رباعی</a>
+                            </li>
+
+                            <li>
+                                <a href="/Masnavi.html"> مثنوی</a>
+                            </li>
+
+                            <li>
+                                <a href="/Nasr.html"> نثر</a>
+                            </li>
+                        </ul>
+
+                    </li>
+
+                    <li><a href="#"><i class="fa fa-fw fa-envelope"></i>ایمیل<span class="label label-warning pull-left">4</span></a></li>
+                    <li><a href="/Dictionary.html"><i class="fa fa-fw fa-fw fa-book"></i>لغت نامه</a></li>
+                    <li class="active"><a href="/OnlineShop.html"><i class="fa fa-fw fa-shopping-cart"></i>فروشگاه</a></li>
+                    <li><a href="#"><i class="fa fa-fw fa-users"></i>شبکه اجتماعی</a></li>
+                </ul>
+            </div>
+
+            <div class="list-group col-lg-10 col-xs-12">
+                <table id="ShoppingCart" class="col-lg-12 col-xs-12">
+
+                    <thead>
+                        <tr>
+                            <td class="first" colspan="2">شرح محصول</td>
+                            <td>تعداد</td>
+                            <td>قیمت واحد</td>
+                            <td>قیمت کل</td>
+                            <td class="last">انصراف</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="border-left:none">
+                                <img src="images/shazdeh.jpg" alt="شازده کوچولو" style="max-height:200px" />
+                            </td>
+                            <td style="border-right:none">
+                                <h4 class="list-group-item-heading">شازده کوچولو</h4>
+                                <p class="list-group-item-text">نویسنده : آنتوان دو سنت اگزوپری</p>
+                            </td>
+                            <td>
+                                <div class="styled-select">
+
+                                    <select name="ctl15$repItemList$ctl00$lstCount" onchange="javascript:setTimeout('__doPostBack(\'ctl15$repItemList$ctl00$lstCount\',\'\')', 0)" id="ctl15_repItemList_lstCount_0" commandname="Edit" data-max="1" commandargument="4445,False,True,1,0">
+                                        <option selected="selected" value="1">1</option>
+
+                                    </select>
+
+                                </div>
+                            </td>
+                            <td>
+                                <span class="al">70,000</span><span class="toman">تومان</span>
+                            </td>
+                            <td>
+                                <span>70,000</span><span class="toman">تومان</span>
+
+                            </td>
+                            <td>
+                                <a class="btn btn-primary btn-small" onclick="ShowProgress()" href="#">نهایی کردن خرید </a>
+                                <button class="btn btn-default" type="button">حذف</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div id="ShoppingProgress" class="progress" style="display:none">
+                    <div class="progress-bar progress-bar-success" style="width: 25%">
+                        <span class="sr-only">ورود به پورتال</span>
+                    </div>
+                    <div class="progress-bar progress-bar-warning" style="width: 25%">
+                        <span class="sr-only">اطلاعات ارسال سفارش</span>
+                    </div>
+                    <div class="progress-bar progress-bar-info" style="width: 25%">
+                        <span class="sr-only">بازبینی سفارش</span>
+                    </div>
+                    <div class="progress-bar progress-bar-info" style="width: 25%">
+                        <span class="sr-only">اطلاعات پرداخت</span>
+                    </div>
+
+                </div>
+
+                <div id="Info" class="container" style="display:none">
+                    <div class="frm col-lg-6">
+                        <table id="SendingInfo">
+                            <tbody>
+                                <tr>
+                                    <td class="title">نام و نام&zwnj;خانوادگی تحویل گیرنده:</td>
+                                    <td class="second">
+                                        <input name="" type="text" placeholder="نام و نام خانوادگی" id="txtName" tabindex="1" class="text-box rtl">
+                                        <span id="ctl03_CustomValidator1" class="errormsg" style="display:none;"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="title">شماره تماس ضروری:</td>
+                                    <td class="second">
+                                        <input name="txtMobile" type="text" maxlength="11" id="txtMobile" tabindex="2" class="text-box ltr" style="direction:ltr" placeholder="09...">
+                                        <span id="cvlMobile" class="errormsg" style="display:none;"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="title">شماره تلفن ثابت (به همراه پیش شماره):</td>
+                                    <td class="second">
+                                        <input name="txtPhone" type="text" maxlength="11" id="txtPhone" tabindex="3" class="text-box ltr" style="direction:ltr" placeholder="0...">
+                                        <span id="CustomValidator3" class="errormsg" style="display:none;"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="title">محل سکونت:</td>
+                                    <td class="second">
+                                        <input name="txtCity" type="text" id="txtCity" tabindex="5" class="text-box city left rtl" placeholder="شهرستان">
+                                        <span id="CustomValidator4" class="errormsg" style="display:none;"></span>
+                                        <div id="div_drpProvince" class="styled-select">
+                                            <select name="drpProvince" id="drpProvince">
+                                                <option value="255">...</option>
+                                                <option value="2">آذربایجان شرقی</option>
+                                                <option value="3">آذربایجان غربی</option>
+                                                <option value="4">اردبیل</option>
+                                                <option value="5">اصفهان</option>
+                                                <option value="6">البرز</option>
+                                                <option value="7">ایلام</option>
+                                                <option value="8">بوشهر</option>
+                                                <option selected="selected" value="9">تهران</option>
+                                                <option value="10">چهارمحال و بختیاری</option>
+                                                <option value="11">خراسان جنوبی</option>
+                                                <option value="12">خراسان رضوی</option>
+                                                <option value="13">خراسان شمالی</option>
+                                                <option value="14">خوزستان</option>
+                                                <option value="15">زنجان</option>
+                                                <option value="16">سمنان</option>
+                                                <option value="17">سیستان و بلوچستان</option>
+                                                <option value="18">فارس</option>
+                                                <option value="19">قزوین</option>
+                                                <option value="20">قم</option>
+                                                <option value="21">کردستان</option>
+                                                <option value="22">کرمان</option>
+                                                <option value="23">کرمانشاه</option>
+                                                <option value="24">کهگیلویه و بویراحمد</option>
+                                                <option value="25">گلستان</option>
+                                                <option value="26">گیلان</option>
+                                                <option value="27">لرستان</option>
+                                                <option value="28">مازندران</option>
+                                                <option value="29">مرکزی</option>
+                                                <option value="30">هرمزگان</option>
+                                                <option value="31">همدان</option>
+                                                <option value="32">یزد</option>
+
+                                            </select>
+                                            <span id="ctl03_CustomValidator5" class="errormsg" style="display:none;"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="title">آدرس پستی:</td>
+                                    <td class="second">
+                                        <textarea name="txtAddreess" rows="2" cols="20" id="txtAddreess" tabindex="6" class="text-box desc" placeholder="ادامه آدرس خود را وارد کنید ..."></textarea>
+                                        <span id="CustomValidator6" class="errormsg" style="display:none;"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="title">کدپستی:</td>
+                                    <td class="second">
+                                        <input name="ctl03$txtPostalCode" type="text" maxlength="10" id="ctl03_txtPostalCode" tabindex="7" class="text-box ltr" onkeydown="PersianKeyDown(event)" onkeypress="PersianKeyPress(event, 0)">
+                                        <span id="ctl03_cvlPostalCode" class="errormsg" style="display:none;"></span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="shipping_list col-lg-6" style="padding:0px 25px">
+                        <form>
+                            <div class="shipping_item ">
+                                <table class="col-lg-12">
+                                    <colgroup>
+                                        <col class="w46">
+                                        <col class="w1037">
+                                        <col class="w127">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="first">
+                                                <input value="1" type="radio" onclick="radio(rbShippingX)" id="rbShippingX" data-id="1">
+                                            </td>
+                                            <td class="second">
+                                                <img src="http://94.182.168.34/Digikala/Image/Icon/express_delivery_dk_48_icon.png" alt="IconPath">
+                                                <div style="margin-right: 135px; margin-top: -45px; min-width: 100%;" class="right">
+                                                    <p class="title">تحویل اکسپرس</p>
+                                                    <p class="desc">زمان تحویل سفارش : همان روز </p>
+                                                </div>
+                                            </td>
+                                            <td class="last">
+
+                                                <p><span class="green">4,500</span>تومان</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="shipping_item ">
+                                <table class="col-lg-12">
+                                    <colgroup>
+                                        <col class="w46">
+                                        <col class="w1037">
+                                        <col class="w127">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="first">
+                                                <input value="2" type="radio" onclick="radio()" id="rbShippingP" data-id="2">
+                                            </td>
+                                            <td class="second">
+                                                <img class="right" src="http://94.182.168.34/Digikala/Image/Icon/post_48_icon.png" alt="IconPath">
+                                                <div style="margin-right: 135px; margin-top: -45px;" class="right">
+                                                    <p class="title">پست پیشتاز</p>
+                                                    <p class="desc">زمان تقریبی سفارش بر اساس محدوده جغرافیایی: 48 - 72 ساعت
+                                                </div>
+                                            </td>
+                                            <td class="last">
+
+                                                <p><span class="green">5,000</span>تومان</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="shipping_item ">
+                                <table class="col-lg-12">
+                                    <colgroup>
+                                        <col class="w46">
+                                        <col class="w1037">
+                                        <col class="w127">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="first">
+                                                <input value="3" type="radio" onclick="radio()" id="rbShippingT" data-id="3">
+                                            </td>
+                                            <td class="second">
+                                                <img class="right" src="http://94.182.168.34/Digikala/Image/Icon/tipax_48_icon.png" alt="IconPath">
+                                                <div style="margin-right: 135px; margin-top: -45px;" class="right">
+                                                    <p class="title">تیپاکس</p>
+                                                    <p class="desc">زمان تقریبی سفارش بر اساس محدوده جغرافیایی: 24 - 48 ساعت
+                                                </div>
+                                            </td>
+                                            <td class="last">
+
+                                                <p><span class="green">5,500</span>تومان</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="shipping_item ">
+                                <table class="col-lg-12">
+                                    <colgroup>
+                                        <col class="w46">
+                                        <col class="w1037">
+                                        <col class="w127">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="first">
+                                                <input value="4" type="radio" onclick="radio()" id="rbShipping" data-id="4">
+                                            </td>
+                                            <td class="second">
+                                                <img class="right" src="http://94.182.168.34/Digikala/Image/Icon/vtn_48_icon.png" alt="IconPath">
+                                                <div style="margin-right: 135px; margin-top: -45px;" class="right">
+                                                    <p class="title">باربری (پس کرایه | لوازم خانگی سنگین)</p>
+                                                    <p class="desc">زمان تقریبی سفارش بر اساس محدوده جغرافیایی: 24 - 48 ساعت</p>
+                                                </div>
+                                            </td>
+                                            <td class="last">
+
+                                                <p class="green">پس کرایه</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </form>
+
+                    </div>
+
+                    <div class="foot col-lg-8 col-lg-offset-5 col-xs-offset-4">
+                        <a class="btn btn-primary btn-small" href="/ReviewInfo.html" data-dismiss="modal">ادامه </a>
+                        <a class="btn btn-default" href="/PortalHomePage.html" data-dismiss="modal">حذف سفارش </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+        <footer></footer>
+
+        <!-- All Javascript at the bottom of the page for faster page loading -->
+        <script src="js/jquery.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="js/bootstrap.js"></script>
+        <!-- Custom JS -->
+        <script src="js/script.js"></script>
+
+        <script>
+            function ShowProgress() {
+                $("#ShoppingCart").css("display", "none");
+                $("#Info").css("display", "block");
+                $("#ShoppingProgress").css("display", "block");
+            }
+
+            function radio(id) {
+                if (id == "rbShippingX")
+                    $("#rbShippingX").addAttr(checked, "checked");
+                $("#rbShippingT").removeAttr(checked);
+            }
+        </script>
+
+</body>
+</html>
