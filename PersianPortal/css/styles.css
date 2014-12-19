@@ -720,3 +720,45 @@ tr:nth-child(3)
 .openIcon{
    width:80px; 
 }
+
+
+
+.btn-faal {
+  color: #ffffff;
+  background-color: #E01960;
+  border-color: #E01960;
+}
+
+.btn-faal:hover,
+.btn-faal:focus,
+.btn-faal:active,
+.btn-faal.active {
+  background-color: #E74D83;
+  border-color: #EE80A6;
+}
+
+.btn-faal.disabled,
+.btn-faal[disabled],
+fieldset[disabled] .btn-faal,
+.btn-faal.disabled:hover,
+.btn-faal[disabled]:hover,
+fieldset[disabled] .btn-faal:hover,
+.btn-faal.disabled:focus,
+.btn-faal[disabled]:focus,
+fieldset[disabled] .btn-faal:focus,
+.btn-faal.disabled:active,
+.btn-faal[disabled]:active,
+fieldset[disabled] .btn-faal:active,
+.btn-faal.disabled.active,
+.btn-faal[disabled].active,
+fieldset[disabled] .btn-faal.active {
+  background-color: #E74D83;
+  border-color: #EE80A6;
+}
+
+
+.radio-inline input[type="radio"]{
+    direction:rtl;
+    margin-right:auto;
+    margin-left:auto
+}
