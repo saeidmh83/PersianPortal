@@ -540,3 +540,148 @@ border-spacing: 2px;
 .foot{
 padding:3%
 }
+
+
+
+
+.flatTable {
+    width: 100%;
+    min-width: 500px;
+    border-collapse: collapse;
+    font-weight: bold;
+    color: #6b6b6b;
+    margin-bottom:40px;
+}
+  tr{
+    height:40px;
+    background:#f6f3f7 - #222;
+    border-bottom:rgba(0,0,0,.05) 1px solid;
+  }
+  
+  td{    
+    box-sizing:border-box;
+    padding-left:30px;
+    padding:10px
+  }
+
+.titleTr{
+  height:50px;
+  width:100%;  
+  color:#f6f3f7; 
+  background-image:url('/images/light-bar.png');
+    /*background-color:#FCE6ED;*/
+  /*background:#dd004e;*/  
+    /*background: repeat-x;*/
+  border:0px solid;
+}
+
+.titleTd{
+  border-left:10px #fce6ed ;
+    /*width:30%;*/
+    color:black;
+    font-weight:bold;
+  background:url('/images/bar.png') right no-repeat;
+
+}
+
+.plusTd{
+    background:url(http://i.imgur.com/3hSkhay.png) center center no-repeat, rgba(0,0,0,.1);
+}
+
+.controlTd{  
+  position:relative;
+  width:80px;
+  background:url(http://i.imgur.com/9Q5f6cv.png) center center no-repeat;
+  cursor:pointer;
+}
+
+.headingTr{
+    height:30px;
+    background:#dd004e + #222;
+    color:#4e4b4b; 
+    font-size:13pt;
+    border:0px solid;
+}  
+}
+
+.button{
+  text-align:center;
+  cursor:pointer;
+}
+
+.sForm {
+    position: absolute;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100%;
+    background: #f6f3f7 - #222;
+    overflow: hidden;
+    transition: width 1s, right .3s;
+    padding: 0px;
+    box-sizing: border-box;
+} 
+  .close{
+    float:right; 
+    height:70px;
+    width:80px;
+    padding-top:25px;    
+    box-sizing:border-box;
+    background:rgba(255,0,0,.4);
+      
+  }
+  
+  .title{
+    width:100%;
+    height:70px;
+    padding-top:20px;
+    padding-left:20px;
+    box-sizing:border-box;
+    background:rgba(0,0,0,.1);
+  }
+}
+.open{  
+  right:0;
+  width:400px !important;
+}
+
+.settingsIcons{
+  position:absolute; 
+  top:0;
+  right:0;
+  width:0;
+
+  overflow:hidden;
+
+}
+
+.display{
+
+  width:300px;
+}
+
+.settingsIcon{
+  float:right; 
+  background:#dd004e;
+  color:#f6f3f7;
+  height:50px;
+  width:80px;
+  padding-top:15px;
+  box-sizing:border-box;
+  text-align:center;
+  overflow:hidden;
+  transition:width 1s;
+}
+
+.settingsIcon:hover{
+  background:#dd004e - #222;
+}
+
+tr:nth-child(3)
+   .settingsIcon{
+    height:51px;
+}
+
+.openIcon{
+   width:80px; 
+}
