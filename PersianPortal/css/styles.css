@@ -572,6 +572,8 @@ body {
 
 .news-section .well {
     padding-top: 0;
+    min-width: 100px;
+    overflow: hidden;
 }
 
 
