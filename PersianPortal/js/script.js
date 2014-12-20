@@ -9,6 +9,7 @@ Notes:	 Hand coded for Udemy.com
 
 */
 
+
 $(function() {
 	
 	$('#alertMe').click(function(e) {

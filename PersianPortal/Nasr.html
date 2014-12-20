@@ -75,7 +75,7 @@
                         <span class="input-group-btn">
                             <button type="submit" class="btn btn-default btn-search"><span class="fa fa-search"></span></button>
                         </span>
-                        <input type="text" class="form-control" placeholder="جستجو..." id="searchInput">
+                        <input type="text" class="form-control" placeholder="پیدا کن..." id="searchInput" onchange="spellCheck()" onkeydown="spellCheck()" onkeypress="spellCheck()" onkeyup="spellCheck()">
                     </div>
                 </form><!-- end navbar-form -->
             </div>
@@ -457,6 +457,14 @@ border:none'><span style='border:none'>.</span></span><span lang=FA
         function showAll() {
             $("#zakani").css("display", "block");
             $("#sadi").css("display", "block");
+        }
+        function spellCheck() {
+            if ($("#searchInput").val() == "سلنام" || $("#searchInput").val() == "اسعار" || $("#searchInput").val() == "احبار")
+                $("#searchInput").css("color", "blue");
+            if ($("#searchInput").val() == "سسس" || $("#searchInput").val() == "..." || $("#searchInput").val() == "پپ")
+                $("#searchInput").css("color", "red");
+            if ($("#searchInput").val() == "")
+                $("#searchInput").css("color", "black");
         }
     </script>
 </body>

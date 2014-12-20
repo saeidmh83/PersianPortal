@@ -743,7 +743,14 @@
         <script src="js/script.js"></script>
 
         <script>
-
+            function spellCheck() {
+                if ($("#searchInput").val() == "سلنام" || $("#searchInput").val() == "اسعار" || $("#searchInput").val() == "احبار")
+                    $("#searchInput").css("color", "blue");
+                if ($("#searchInput").val() == "سسس" || $("#searchInput").val() == "..." || $("#searchInput").val() == "پپ")
+                    $("#searchInput").css("color", "red");
+                if ($("#searchInput").val() == "")
+                    $("#searchInput").css("color", "black");
+            }
             function ShowModal() {
                 $('#myModal').modal('show');
                 $('input[datepicker="persiandate"]').datepicker({
