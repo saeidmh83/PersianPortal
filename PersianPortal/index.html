@@ -41,7 +41,7 @@
 
             <ul class="nav navbar-nav nav">
                 <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span id="ShoppingCartNum" class="label label-warning pull-right" style="display:none"></span> &nbsp;&nbsp;&nbsp;&nbsp; <strong class="fa fa-fw fa-shopping-cart"></strong> سبد خرید  </a></li>
-                 <li class="dropdown">
+                <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong class="caret"></strong> حساب من <span class="fa fa-user"></span></a>
 
                     <ul class="dropdown-menu">
@@ -75,7 +75,7 @@
                         <span class="input-group-btn">
                             <button type="submit" class="btn btn-default btn-search"><span class="fa fa-search"></span></button>
                         </span>
-                        <input type="text" class="form-control" placeholder="جستجو..." id="searchInput">
+                        <input onchange="spellCheck()" onkeydown="spellCheck()" onkeypress="spellCheck()" onkeyup="spellCheck()" type="text" class="form-control" placeholder="جستجو..." id="searchInput">
                     </div>
                 </form><!-- end navbar-form -->
             </div>
@@ -125,13 +125,133 @@
                     <li><a href="/SocialNetwork.html"><i class="fa fa-fw fa-users"></i>شبکه اجتماعی</a></li>
                 </ul>
             </div>
-            <div class="col-lg-10" style="margin-top:40px">
-                <div class="row col-lg-offset-3 form-inline">
-                    <input type="text" class="form-control col-lg-4" placeholder=" ترجمه لغت " id="dictionary">
-                    <button type="submit" class="btn btn-default btn-search fa col-sm-1" style="margin-right:40px" onclick="ShowResult()"> ترجمه </button>
+            <div class="col-lg-4">
+                <div class="row news-box">
+                    <div class=" col-lg-8 col-lg-offset-2" style="padding: 10px 30px 20px 30px !important">
+                        <div class="news-heading">
+                            <h3>
+                                <a href="#">تازه ترین اخبار</a>
+                                <span> : </span>
+                                <span class="news-date">
+                                    <strong>17</strong>
+                                    مهر
+                                    <em>1393</em>
+                                </span>
+                            </h3>
+                        </div>
+                        <p>
+                            تحریم‌ها برداشته می شود/ بانک‌ها آماده باشند
+
+                        </p>
+                        <div class="news-read-more" style="width:50%">
+                            <span>[ </span>
+                            <a href="/News.html" style="font-size:medium"> ادامه خبر </a>
+                            <span> ]</span>
+                        </div>
+                        <div class="dashed-hr"></div>
+                        <p>
+                            تحریم‌ها برداشته می شود/ بانک‌ها آماده باشند
+
+                        </p>
+                        <div class="news-read-more" style="width:50%">
+                            <span>[ </span>
+                            <a href="/News.html" style="font-size:medium"> ادامه خبر </a>
+                            <span> ]</span>
+                        </div>
+                        <div class="dashed-hr"></div>
+                        <p>
+                            تحریم‌ها برداشته می شود/ بانک‌ها آماده باشند
+
+                        </p>
+                        <div class="news-read-more" style="width:50%">
+                            <span>[ </span>
+                            <a href="/News.html" style="font-size:medium"> ادامه خبر </a>
+                            <span> ]</span>
+                        </div>
+                        <div class="dashed-hr"></div>
+                    </div>
                 </div>
-                <div class="row col-lg-5 col-lg-offset-3 ">
-                    <input class="form-control" type="text" id="searchResult" readonly="readonly" />
+
+            </div>
+            <div class="col-lg-4">
+                <div class="row news-box">
+                    <div class=" col-lg-8 col-lg-offset-2" style="padding: 10px 30px 20px 30px !important">
+                        <div class="news-heading">
+                            <h3>
+                                <a href="#">تازه ترین اشعار</a>
+                                <span> : </span>
+                                <span class="news-date">
+                                    <strong>17</strong>
+                                    مهر
+                                    <em>1393</em>
+                                </span>
+                            </h3>
+                        </div>
+                        <p>آی آدمها /علی اسفندیاری - نیما یوشیج</p>
+                        <div class="news-read-more">
+
+                            <a href="/ShereNo.html" style="font-size:medium"> برو به شعر </a>
+
+                        </div>
+
+                        <div class="dashed-hr"></div>
+                        <p> ای آسمان این چرخ من زان ماه رو آموختم / مولانا جلال الدین رومی</p>
+                        <div class="news-read-more">
+
+                            <a href="/Masnavi.html" style="font-size:medium"> برو به شعر </a>
+
+                        </div>
+
+                        <div class="dashed-hr"></div>
+                        <p> قصیده آبی خاکستری سیاه / حمید مصدق</p>
+                        <div class="news-read-more">
+
+                            <a href="/ShereNo.html" style="font-size:medium"> برو به شعر </a>
+
+                        </div>
+
+                        <div class="dashed-hr"></div>
+                        <p> 	زبان نگاه /هوشنگ ابتهاج (ه.الف.سایه)</p>
+                        <div class="news-read-more">
+
+                            <a href="/Ghazal.html" style="font-size:medium"> برو به شعر </a>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-2">
+                <div class="row news-section">
+                    <div class="ad-box">
+                        <div class="well">
+                            <h1 class="text-center">تبلیغات</h1>
+                            <hr />
+                            <div style="text-align: center">
+                                <img src="/images/c8c57293d052b777855b86cafb348a4b.gif" alt="Ad 1" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ad-box">
+                        <div class="well">
+                            <h1 class="text-center">تبلیغات</h1>
+                            <hr />
+                            <div style="text-align: center">
+                                <img src="/images/New_28142.gif" alt="Ad 2" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ad-box">
+                        <div class="well">
+                            <h1 class="text-center">تبلیغات</h1>
+                            <hr />
+                            <div style="text-align: center">
+                                <img src="/images/New_28529.gif" alt="Ad 3" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -150,6 +270,12 @@
         function ShowResult() {
             if ($("#dictionary").val() != "")
                 $("#searchResult").css("display", "block");
+        }
+        function spellCheck() {
+            if ($("#searchInput").val() == "سلنام" || $("#searchInput").val() == "اسعار" || $("#searchInput").val() == "احبار")
+                $("#searchInput").css("color", "red");
+            if ($("#searchInput").val() == "")
+                $("#searchInput").css("color", "black");
         }
     </script>
 </body>

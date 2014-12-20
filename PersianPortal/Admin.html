@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Website Title & Description for Search Engine purposes -->
+    <title> پورتال جامع پارسی زبانان </title>
+
+    <meta name="description" content="Learn how to code your first responsive website with the new Twitter Bootstrap 3.">
+
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap-rtl.css">
+    <!--<link href="css/bootstrap-glyphicons.css" rel="stylesheet">-->
+
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Include Modernizr in the head, before any other Javascript -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+
+</head>
+<body>
+
+    <div class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+
+            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+            <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <ul class="nav navbar-nav nav">
+                <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span id="ShoppingCartNum" class="label label-warning pull-right" style="display:none"></span> &nbsp;&nbsp;&nbsp;&nbsp; <strong class="fa fa-fw fa-shopping-cart"></strong> سبد خرید  </a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong class="caret"></strong> حساب من <span class="fa fa-user"></span></a>
+
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a id="kk" href="#" style="background-color:none"><span class="fa fa-wrench"></span> تنظیمات</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><span class="fa fa-refresh"></span> به روز رسانی پروفایل</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><span class="fa fa-briefcase"></span> پرداخت</a>
+                        </li>
+
+                        <li class="divider"></li>
+
+                        <li>
+                            <a href="#"><span class="fa fa-sign-out"></span> خروج</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="navbar-brand"><!--<img src="images/logo.png" alt="Your Logo">--> پورتال جامع پارسی زبانان</div>
+
+
+            <div class="container">
+                <form class="navbar-form" id="search-box">
+                    <div class="input-group" style="display:table">
+                        <span class="input-group-btn">
+                            <button type="submit" class="btn btn-default btn-search"><span class="fa fa-search"></span></button>
+                        </span>
+                        <input type="text" class="form-control" placeholder="جستجو..." id="searchInput">
+                    </div>
+                </form><!-- end navbar-form -->
+            </div>
+
+        </div><!-- end nav-collapse -->
+
+
+    </div><!-- end container -->
+    <div class="container-fluid" style="min-height:670px">
+        <div class="row">
+            <div class="col-lg-2" style="max-width:200px">
+                <ul class="side-menu nav nav-pills nav-stacked">
+                    <li><a href="/index.html"><i class="fa fa-home"></i>صفحه اصلی</a></li>
+                    <li><a href="/News.html"><i class="fa fa-fw fa-microphone"></i>اخبار</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-comment"></i>اشعار</a>
+                        <ul class="dropdown-menu" style="right:100%;top:0%">
+                            <li>
+                                <a id="kk" href="/Hafez.html" style="background-color:none"> فال حافظ</a>
+                            </li>
+                            <li>
+                                <a id="kk" href="/Ghazal.html" style="background-color:none"> غزل</a>
+                            </li>
+
+                            <li>
+                                <a href="/ShereNo.html">شعر نو</a>
+                            </li>
+
+                            <li>
+                                <a href="/Robaii.html"> دوبیتی و رباعی</a>
+                            </li>
+
+                            <li>
+                                <a href="/Masnavi.html"> مثنوی</a>
+                            </li>
+
+                            <li>
+                                <a href="/Nasr.html"> نثر</a>
+                            </li>
+                        </ul>
+
+                    </li>
+
+                    <li><a href="/Outlook Web Access.htm"><i class="fa fa-fw fa-envelope"></i>ایمیل<span class="label label-warning pull-left">4</span></a></li>
+                    <li><a href="/Dictionary.html"><i class="fa fa-fw fa-fw fa-book"></i>لغت نامه</a></li>
+                    <li><a href="/OnlineShop.html"><i class="fa fa-fw fa-shopping-cart"></i>فروشگاه</a></li>
+                    <li><a href="/SocialNetwork.html"><i class="fa fa-fw fa-users"></i>شبکه اجتماعی</a></li>
+                    <li class="active"><a href="/Admin.html"><i class="fa fa-fw fa-user"></i>مدیریت سایت</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-10" style="margin-top:40px">
+                <div class="thumbnails row">
+                    <div class="col-lg-4 col-sm-4 col-xs-12">
+                        <div class="thumbnail" style="border:none">
+                            <!--<img alt="PSD to HTML5 &amp; CSS3" src="images/item_psd2html5.jpg">
+
+                            <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> 39<sup>$</sup></div>-->
+
+                            <div class="caption">
+                                <h2> log های سایت</h2>
+                                <div class="row" style="text-align:right; margin-top:40px; margin:20px">
+
+                                    <p style="font-size:large"> تعداد بازدید کنندگان اخبار : 204 نفر</p>
+                                    <p style="font-size:large"> تعداد بازدید کنندگان اشعار : 368 نفر</p>
+                                    <p style="font-size:large">  تعداد کاربران حاضر : 77 نفر</p>
+                                    <p style="font-size:large">  تعداد کاربران ثبت نام شده: 456 نفر</p>
+                                </div>
+                            </div><!-- end caption -->
+                        </div><!-- end thumbnail -->
+                    </div><!-- end col-6 -->
+
+
+                    <div class="col-lg-4 col-sm-4 col-xs-12">
+                        <div class="thumbnail" style="border:none">
+                            <!--<img alt="PSD to HTML5 &amp; CSS3" src="images/item_psd2html5.jpg">
+
+                            <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> 39<sup>$</sup></div>-->
+                            <div class="caption">
+                                <h2> انتساب افراد به سمت های مختلف</h2>
+                                <input type="text" placeholder="نام کاربری" style="width:70%; border-radius:5px; margin-top:10px" />
+                                <div class="btn-group" style=" width: 40%">
+                                    <a class="col-xs-12 btn btn-default dropdown-toggle btn-select" data-toggle="dropdown" href="#" style="margin-top:20px; min-width:150px">سمت را انتخاب کن  <span class="caret"></span></a>
+                                    <ul class="col-xs-12 dropdown-menu">
+                                        <li><a href="#">مسئول شعر</a></li>
+                                        <li><a href="#">مسئول اخبار</a></li>
+                                        <li><a href="#">مسئول تبلیغات</a></li>
+                                    </ul>
+                                </div>
+
+                                <p class="col-xs-12" style="margin-top:20px; margin-right:10px">
+                                    <a class="btn btn-danger btn-small" href="#" style="width:35%">تایید </a>
+                                </p>
+                            </div><!-- end caption -->
+                        </div><!-- end thumbnail -->
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-xs-12">
+                        <div class="thumbnail" style="border:none">
+                            <!--<img alt="PSD to HTML5 &amp; CSS3" src="images/item_psd2html5.jpg">
+
+                            <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> 39<sup>$</sup></div>-->
+                            <div class="caption">
+                                <h2>مدیریت پیکربندی و محتوای ایمیل</h2>
+                                <h3 style="font-size:large; margin-top:30px"> میزان حجم فایل قابل پیوست : </h3>
+                                <div class="btn-group" style=" width: 40%">
+                                    <a class="col-xs-12 btn btn-default dropdown-toggle btn-select" data-toggle="dropdown" href="#" style="margin-top:20px; min-width:150px">0 مگابایت<span class="caret"></span></a>
+                                    <ul class="col-xs-12 dropdown-menu">
+                                        <li><a href="#">5 مگابایت </a></li>
+                                        <li><a href="#">10 مگابایت</a></li>
+                                        <li><a href="#">25 مگابایت</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#" onclick="show()"><span class="glyphicon glyphicon-star"></span> دیگر مقادیر</a></li>
+                                    </ul>
+                                </div>
+                                <input id="other" type="text" placeholder="0 مگابایت" style="display:none; width:55%; border-radius:5px; margin-top:10px; margin-right:25%" />
+
+                                <p class="col-xs-12" style="margin-top:20px; margin-right:10px">
+                                    <a class="btn btn-danger btn-small" href="#" style="width:35%">تایید </a>
+                                </p>
+                            </div><!-- end caption -->
+                        </div><!-- end thumbnail -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer></footer>
+
+    <!-- All Javascript at the bottom of the page for faster page loading -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+    <script>
+        function ShowResult() {
+            if ($("#dictionary").val() != "")
+                $("#searchResult").css("display", "block");
+        }
+
+        function show() {
+            $("#other").css("display", "block");
+        }
+
+        $(".dropdown-menu li a").click(function () {
+            var selText = $(this).text();
+            $(this).parents('.btn-group').find('.dropdown-toggle').html(selText + ' <span class="caret"></span>');
+        });
+
+        $("#btnSearch").click(function () {
+            alert($('.btn-select').text() + ", " + $('.btn-select2').text());
+        });
+    </script>
+</body>
+</html>
