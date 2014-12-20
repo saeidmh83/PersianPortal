@@ -45,7 +45,7 @@
 
                     <ul class="dropdown-menu">
                         <li>
-                            <a id="kk" href="#" style="background-color:none"><span class="fa fa-wrench"></span> تنظیمات</a>
+                            <a id="kk" href="#" onclick="customize()" style="background-color:none"><span class="fa fa-wrench"></span> تنظیمات</a>
                         </li>
 
                         <li>
@@ -553,6 +553,7 @@
         <script src="js/script.js"></script>
 
         <script>
+           
             function spellCheck() {
                 if ($("#searchInput").val() == "سلنام" || $("#searchInput").val() == "اسعار" || $("#searchInput").val() == "احبار")
                     $("#searchInput").css("color", "blue");

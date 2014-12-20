@@ -46,7 +46,7 @@
 
                     <ul class="dropdown-menu">
                         <li>
-                            <a id="kk" href="#" style="background-color:none"><span class="fa fa-wrench"></span> تنظیمات</a>
+                            <a id="kk" href="#customizeModal" onclick="ShowCustomizeModal()" style="background-color:none"><span class="fa fa-wrench"></span> تنظیمات</a>
                         </li>
 
                         <li>
@@ -257,6 +257,35 @@
         </div>
     </div>
 
+    <div id="customizeModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="float:left; margin-top:-3%">×</button>
+                    <h4 class="modal-title" id="login-modal-title-signin">شخصی سازی پورتال :</h4>
+                </div>
+                <div class="container" style="margin:30px">
+                    <form role="form">
+                        <label class="radio-inline" onclick="Default()" style="width: 100%">
+                            <input checked="checked" type="radio" name="optradio" style="float: right; margin-left: 30px">
+                            فونت dast nevis : <p style="font-size: x-large; text-align: center;"> پورتال جامع پارسی زبانان</p>
+                        </label>
+                        <label class="radio-inline" style="text-align:right;margin:0; width:100%">
+                            <input type="radio" name="optradio" onclick="showNazanin()" style="float:right; margin-left:30px">
+                            فونت B Nazanin : <p style="font-family:B Nazanin; font-size:x-large; text-align:center ">پورتال جامع پارسی زبانان</p>
+                        </label>
+                        <label class="radio-inline" style=" margin: 0; width: 100%">
+                            <input type="radio" name="optradio" onclick="showMitra()" style="float: right; margin-left: 30px">
+                            فونت B Mitra : <p style="font-family: B Mitra; font-size: x-large; text-align: center;">پورتال جامع پارسی زبانان</p>
+                        </label>
+                    </form>
+                    
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+
+    
     <footer></footer>
 
     <!-- All Javascript at the bottom of the page for faster page loading -->
@@ -265,8 +294,38 @@
     <script src="js/bootstrap.js"></script>
     <!-- Custom JS -->
     <script src="js/script.js"></script>
+    
 
     <script>
+       
+        function ShowCustomizeModal() {
+            $('#customizeModal').modal('show');
+            $('input[datepicker="persiandate"]').datepicker({
+                changeMonth: true,
+                changeYear: true,
+            });
+            $("#datepickerbtn").click(function (event) {
+                event.preventDefault();
+                $("#fadatepicker").focus();
+            })
+        }
+        function showNazanin() {
+            $('body').css("font-family", "B nazanin");
+        }
+        function showMitra() {
+            $('body').css("font-family", "B mitra");
+        }
+        function Default() {
+            $('body').css("font-family", "dast nevis");
+
+        }
+        function customize() {
+            $('body').css("background", "url('/images/website-background-pattern.jpg')");
+            $('body').css("background", "url('/images/bg-6-full.jpg')");
+            $('body').css("background", "url('/images/light_red_hearts_on_white.jpg')");
+
+        }
+
         function ShowResult() {
             if ($("#dictionary").val() != "")
                 $("#searchResult").css("display", "block");
