@@ -434,7 +434,7 @@ body {
 }
 
 #main-menu {
-    background-color: #eeeeee;
+    /*background-color: #eeeeee;*/
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
 }
@@ -769,6 +769,47 @@ fieldset[disabled] .btn-faal.active {
     direction:rtl;
     margin-right:auto;
     margin-left:auto
+}
+
+
+
+footer{
+    border-top:4px solid rgb(221,0,78);
+    color:white;
+    padding:0px
+}
+
+footer .topwrap{
+    padding-right:50px;
+    min-width:100%;
+    background-color:#292929;
+    height:80px;
+    border-bottom:1px solid #141414;
+}
+
+.footer-nav{
+    float:left;
+    margin:0;
+    height:20px;
+    width:36%
+}
+
+.footer .footer-nav ul li{
+    line-height:80px;
+    height:80px;
+}
+
+
+.FooterThumbnails,.FooterThumbnails .FooterThumbnail{
+    background-color:#292929;
+
+}
+
+.line{
+    background-color:#202020;
+    border-bottom:1px solid #424242;
+    margin-bottom:3px;
+    height:1px
 }
 
 .cd-box .thumbnail .caption {

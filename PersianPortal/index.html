@@ -46,7 +46,7 @@
 
                     <ul class="dropdown-menu">
                         <li>
-                            <a id="kk" href="#" style="background-color:none"><span class="fa fa-wrench"></span> تنظیمات</a>
+                            <a id="kk" href="#customizeModal" onclick="ShowCustomizeModal()" style="background-color:none"><span class="fa fa-wrench"></span> تنظیمات</a>
                         </li>
 
                         <li>
@@ -75,7 +75,7 @@
                         <span class="input-group-btn">
                             <button type="submit" class="btn btn-default btn-search"><span class="fa fa-search"></span></button>
                         </span>
-                        <input onchange="spellCheck()" onkeydown="spellCheck()" onkeypress="spellCheck()" onkeyup="spellCheck()" type="text" class="form-control" placeholder="جستجو..." id="searchInput">
+                        <input onchange="spellCheck()" onkeydown="spellCheck()" onkeypress="spellCheck()" onkeyup="spellCheck()" type="text" class="form-control" placeholder="پیدا کن..." id="searchInput">
                     </div>
                 </form><!-- end navbar-form -->
             </div>
@@ -257,7 +257,103 @@
         </div>
     </div>
 
-    <footer></footer>
+    <div id="customizeModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="float:left; margin-top:-3%">×</button>
+                    <h4 class="modal-title" id="login-modal-title-signin">شخصی سازی پورتال :</h4>
+                </div>
+                <div class="container" style="margin:30px">
+                    <form role="form">
+                        <label class="radio-inline" onclick="Default()" style="width: 100%">
+                            <input checked="checked" type="radio" name="optradio" style="float: right; margin-left: 30px">
+                            فونت dast nevis : <p style="font-size: x-large; text-align: center;"> پورتال جامع پارسی زبانان</p>
+                        </label>
+                        <label class="radio-inline" style="text-align:right;margin:0; width:100%">
+                            <input type="radio" name="optradio" onclick="showNazanin()" style="float:right; margin-left:30px">
+                            فونت B Nazanin : <p style="font-family:B Nazanin; font-size:x-large; text-align:center ">پورتال جامع پارسی زبانان</p>
+                        </label>
+                        <label class="radio-inline" style=" margin: 0; width: 100%">
+                            <input type="radio" name="optradio" onclick="showMitra()" style="float: right; margin-left: 30px">
+                            فونت B Mitra : <p style="font-family: B Mitra; font-size: x-large; text-align: center;">پورتال جامع پارسی زبانان</p>
+                        </label>
+                    </form>
+
+                        </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+
+
+    <footer class="footer">
+        <div class="topwrap">
+            <div class="mrg-auto">
+                <div class="right" style="line-height:80px; font-size:18px;width:50%">چطور می توانیم کمک&zwnj;تان کنیم؟ با ما تماس بگیرید</div>
+            </div>
+        </div>
+        <div class="FooterThumbnails row">
+            <div class="col-lg-4 col-sm-4 col-xs-12">
+                <div class="FooterThumbnail" style="border:none">
+                    <!--<img alt="PSD to HTML5 &amp; CSS3" src="images/item_psd2html5.jpg">
+
+                    <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> 39<sup>$</sup></div>-->
+
+                    <div class="caption">
+                        <h2>راهنمای پورتال</h2>
+                        <div class="line"></div>
+                        <div class="row" style="text-align:right; margin-top:40px; margin:20px">
+
+                            <a href="#" style="text-decoration:none; color:white"><p style="font-size:large"> چگونه با پورتال کار کنم ؟</p></a>
+                            <a href="#" style="text-decoration: none; color: white">
+                                <p style="font-size:large"> پورتال جامع پارسی زبانان چیست ؟ </p>
+                            </a>
+                            <a href="#" style="text-decoration: none; color: white"> <p style="font-size:large">  چگونه پروفایل بسازم ؟</p></a>
+                        </div>
+                    </div><!-- end caption -->
+                </div><!-- end thumbnail -->
+            </div><!-- end col-6 -->
+
+
+            <div class="col-lg-4 col-sm-4 col-xs-12">
+                <div class="FooterThumbnail" style="border:none">
+                    <!--<img alt="PSD to HTML5 &amp; CSS3" src="images/item_psd2html5.jpg">
+
+                    <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> 39<sup>$</sup></div>-->
+                    <div class="caption">
+                        <h2> خدمات مشتریان</h2>
+                        <div class="line"></div>
+                        <div class="row" style="text-align:right; margin-top:40px; margin:20px">
+
+                            <a href="#" style="text-decoration:none; color:white"><p style="font-size:large">تماس با ما</p></a>
+                            <a href="#" style="text-decoration: none; color: white">
+                                <p style="font-size:large"> پاسخ به پرسش های متداول </p>
+                            </a>
+                    </div>
+                    </div><!-- end caption -->
+                </div><!-- end thumbnail -->
+                </div>
+            <div class="col-lg-4 col-sm-4 col-xs-12">
+                <div class="FooterThumbnail" style="border:none">
+                    <!--<img alt="PSD to HTML5 &amp; CSS3" src="images/item_psd2html5.jpg">
+
+                    <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> 39<sup>$</sup></div>-->
+                    <div class="caption">
+                        <h2>ما در شبکه های اجتماعی</h2>
+                        <div class="line"></div>
+                        <div class="row" style="text-align:right; margin-top:40px; margin:20px">
+
+                            <p style="font-size:large">نظرات خود را از طریق شبکه های رسمی پورتال با ما در میان بگذارید و از آخرین رویدادها و طرح های جذاب فروش کتاب و CD مطلع شوید.</p>
+            </div>
+                    </div><!-- end caption -->
+                </div><!-- end thumbnail -->
+        </div>
+    </div>
+
+        <div style="font-size:large;text-align:center">
+                Copyright © پورتال جامع پارسی زبانان دانشگاه شهید بهشتی 2014 <a href="#"></a>
+            </div>
+    </footer>
 
     <!-- All Javascript at the bottom of the page for faster page loading -->
     <script src="js/jquery.js"></script>
@@ -266,13 +362,45 @@
     <!-- Custom JS -->
     <script src="js/script.js"></script>
 
+
     <script>
+
+        function ShowCustomizeModal() {
+            $('#customizeModal').modal('show');
+            $('input[datepicker="persiandate"]').datepicker({
+                changeMonth: true,
+                changeYear: true,
+            });
+            $("#datepickerbtn").click(function (event) {
+                event.preventDefault();
+                $("#fadatepicker").focus();
+            })
+        }
+        function showNazanin() {
+            $('body').css("font-family", "B nazanin");
+        }
+        function showMitra() {
+            $('body').css("font-family", "B mitra");
+        }
+        function Default() {
+            $('body').css("font-family", "dast nevis");
+
+        }
+        function customize() {
+            $('body').css("background", "url('/images/website-background-pattern.jpg')");
+            $('body').css("background", "url('/images/bg-6-full.jpg')");
+            $('body').css("background", "url('/images/light_red_hearts_on_white.jpg')");
+
+        }
+
         function ShowResult() {
             if ($("#dictionary").val() != "")
                 $("#searchResult").css("display", "block");
         }
         function spellCheck() {
             if ($("#searchInput").val() == "سلنام" || $("#searchInput").val() == "اسعار" || $("#searchInput").val() == "احبار")
+                $("#searchInput").css("color", "blue");
+            if ($("#searchInput").val() == "سسس" || $("#searchInput").val() == "..." || $("#searchInput").val() == "پپ")
                 $("#searchInput").css("color", "red");
             if ($("#searchInput").val() == "")
                 $("#searchInput").css("color", "black");
