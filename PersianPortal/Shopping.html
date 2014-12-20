@@ -1,18 +1,9 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title></title>
-</head>
-<body>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
 
     <!-- Website Title & Description for Search Engine purposes -->
-    <title> پورتال جامع پارسی زبانان </title>
+    <title>تکمیل فرآیند خرید | پورتال جامع پارسی زبانان</title>
     <meta name="description" content="Learn how to code your first responsive website with the new Twitter Bootstrap 3.">
 
     <!-- Mobile viewport optimized -->
@@ -95,7 +86,7 @@
     </div><!-- end container -->
     <div class="container-fluid" style="min-height:670px">
         <div class="row">
-            <div class="col-lg-2" style="max-width:200px">
+            <div id="main-menu" class="col-lg-2">
                 <ul class="side-menu nav nav-pills nav-stacked">
                     <li><a href="/index.html"><i class="fa fa-home"></i>صفحه اصلی</a></li>
                     <li><a href="/News.html"><i class="fa fa-fw fa-microphone"></i>اخبار</a></li>
@@ -136,7 +127,7 @@
             </div>
 
             <div class="list-group col-lg-10 col-xs-12" style="min-height:630px">
-                <table id="ShoppingCart" class="col-lg-12 col-xs-12">
+                <table id="ShoppingCart" class="col-lg-10 col-lg-offset-1 col-xs-12">
 
                     <thead>
                         <tr>
@@ -180,24 +171,24 @@
                         </tr>
                     </tbody>
                 </table>
+                <div class="col-lg-10 col-lg-offset-1 col-xs-12 shopping-steps">
+                    <div id="ShoppingProgress" class="progress" style="display:none; height: 30px">
+                        <div class="progress-bar progress-bar-success" style="width: 25%">
+                            <span class="sr-only">ورود به پورتال</span>
+                        </div>
+                        <div class="progress-bar progress-bar-warning" style="width: 25%">
+                            <span class="sr-only">اطلاعات ارسال سفارش</span>
+                        </div>
+                        <div class="progress-bar progress-bar-info" style="width: 25%">
+                            <span class="sr-only">بازبینی سفارش</span>
+                        </div>
+                        <div class="progress-bar progress-bar-info" style="width: 25%">
+                            <span class="sr-only">اطلاعات پرداخت</span>
+                        </div>
 
-                <div id="ShoppingProgress" class="progress" style="display:none">
-                    <div class="progress-bar progress-bar-success" style="width: 25%">
-                        <span class="sr-only">ورود به پورتال</span>
                     </div>
-                    <div class="progress-bar progress-bar-warning" style="width: 25%">
-                        <span class="sr-only">اطلاعات ارسال سفارش</span>
-                    </div>
-                    <div class="progress-bar progress-bar-info" style="width: 25%">
-                        <span class="sr-only">بازبینی سفارش</span>
-                    </div>
-                    <div class="progress-bar progress-bar-info" style="width: 25%">
-                        <span class="sr-only">اطلاعات پرداخت</span>
-                    </div>
-
                 </div>
-
-                <div id="Info" class="container" style="display:none; min-height:500px; margin-bottom:30px">
+                <div id="Info" class="container col-lg-10 col-lg-offset-1 col-xs-12" style="display:none; min-height:500px; margin-bottom:30px">
                     <div class="frm col-lg-6">
                         <table id="SendingInfo">
                             <tbody>
@@ -302,7 +293,7 @@
                                             </td>
                                             <td class="second">
                                                 <img src="http://94.182.168.34/Digikala/Image/Icon/express_delivery_dk_48_icon.png" alt="IconPath">
-                                                <div style="margin-right: 135px; margin-top: -45px; min-width: 100%;" class="right">
+                                                <div style="margin-right: 100px; margin-top: -45px; min-width: 100%;" class="right">
                                                     <p>تحویل اکسپرس</p>
                                                     <p class="desc">زمان تحویل سفارش : همان روز </p>
                                                 </div>
@@ -419,6 +410,7 @@
 
 
         </div>
+    </div>
         <footer></footer>
 
         <!-- All Javascript at the bottom of the page for faster page loading -->

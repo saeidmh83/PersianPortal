@@ -770,3 +770,20 @@ fieldset[disabled] .btn-faal.active {
     margin-right:auto;
     margin-left:auto
 }
+
+.cd-box .thumbnail .caption {
+    padding-top: 40px;
+}
+
+.cd-box .thumbnail .caption .buttons {
+    padding-top: 40px;
+}
+
+.cd-box .thumbnail .caption > h2 {
+    margin-top: 177px;
+}
+
+.shopping-steps * {
+    font-size: 14pt !important;
+    font-family: "B Nazanin", Tahoma, Arial;
+}
