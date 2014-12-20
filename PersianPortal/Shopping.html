@@ -97,7 +97,7 @@
         <div class="row">
             <div class="col-lg-2" style="max-width:200px">
                 <ul class="side-menu nav nav-pills nav-stacked">
-                    <li><a href="/PortalHomePage.html"><i class="fa fa-home"></i>صفحه اصلی</a></li>
+                    <li><a href="/index.html"><i class="fa fa-home"></i>صفحه اصلی</a></li>
                     <li><a href="/News.html"><i class="fa fa-fw fa-microphone"></i>اخبار</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-comment"></i>اشعار</a>
@@ -135,7 +135,7 @@
                 </ul>
             </div>
 
-            <div class="list-group col-lg-10 col-xs-12">
+            <div class="list-group col-lg-10 col-xs-12" style="min-height:630px">
                 <table id="ShoppingCart" class="col-lg-12 col-xs-12">
 
                     <thead>
@@ -197,33 +197,33 @@
 
                 </div>
 
-                <div id="Info" class="container" style="display:none">
+                <div id="Info" class="container" style="display:none; min-height:500px; margin-bottom:30px">
                     <div class="frm col-lg-6">
                         <table id="SendingInfo">
                             <tbody>
                                 <tr>
-                                    <td class="title">نام و نام&zwnj;خانوادگی تحویل گیرنده:</td>
+                                    <td>نام و نام&zwnj;خانوادگی تحویل گیرنده:</td>
                                     <td class="second">
                                         <input name="" type="text" placeholder="نام و نام خانوادگی" id="txtName" tabindex="1" class="text-box rtl">
                                         <span id="ctl03_CustomValidator1" class="errormsg" style="display:none;"></span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="title">شماره تماس ضروری:</td>
+                                    <td>شماره تماس ضروری:</td>
                                     <td class="second">
                                         <input name="txtMobile" type="text" maxlength="11" id="txtMobile" tabindex="2" class="text-box ltr" style="direction:ltr" placeholder="09...">
                                         <span id="cvlMobile" class="errormsg" style="display:none;"></span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="title">شماره تلفن ثابت (به همراه پیش شماره):</td>
+                                    <td>شماره تلفن ثابت (به همراه پیش شماره):</td>
                                     <td class="second">
                                         <input name="txtPhone" type="text" maxlength="11" id="txtPhone" tabindex="3" class="text-box ltr" style="direction:ltr" placeholder="0...">
                                         <span id="CustomValidator3" class="errormsg" style="display:none;"></span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="title">محل سکونت:</td>
+                                    <td>محل سکونت:</td>
                                     <td class="second">
                                         <input name="txtCity" type="text" id="txtCity" tabindex="5" class="text-box city left rtl" placeholder="شهرستان">
                                         <span id="CustomValidator4" class="errormsg" style="display:none;"></span>
@@ -269,14 +269,14 @@
                                 </tr>
 
                                 <tr>
-                                    <td class="title">آدرس پستی:</td>
+                                    <td>آدرس پستی:</td>
                                     <td class="second">
                                         <textarea name="txtAddreess" rows="2" cols="20" id="txtAddreess" tabindex="6" class="text-box desc" placeholder="ادامه آدرس خود را وارد کنید ..."></textarea>
                                         <span id="CustomValidator6" class="errormsg" style="display:none;"></span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="title">کدپستی:</td>
+                                    <td>کدپستی:</td>
                                     <td class="second">
                                         <input name="ctl03$txtPostalCode" type="text" maxlength="10" id="ctl03_txtPostalCode" tabindex="7" class="text-box ltr" onkeydown="PersianKeyDown(event)" onkeypress="PersianKeyPress(event, 0)">
                                         <span id="ctl03_cvlPostalCode" class="errormsg" style="display:none;"></span>
@@ -286,7 +286,7 @@
                         </table>
                     </div>
 
-                    <div class="shipping_list col-lg-6" style="padding:0px 25px">
+                    <div class="shipping_list col-lg-6" style="padding:0px 25px; padding-top:10px">
                         <form>
                             <div class="shipping_item ">
                                 <table class="col-lg-12">
@@ -303,7 +303,7 @@
                                             <td class="second">
                                                 <img src="http://94.182.168.34/Digikala/Image/Icon/express_delivery_dk_48_icon.png" alt="IconPath">
                                                 <div style="margin-right: 135px; margin-top: -45px; min-width: 100%;" class="right">
-                                                    <p class="title">تحویل اکسپرس</p>
+                                                    <p>تحویل اکسپرس</p>
                                                     <p class="desc">زمان تحویل سفارش : همان روز </p>
                                                 </div>
                                             </td>
@@ -331,7 +331,7 @@
                                             <td class="second">
                                                 <img class="right" src="http://94.182.168.34/Digikala/Image/Icon/post_48_icon.png" alt="IconPath">
                                                 <div style="margin-right: 135px; margin-top: -45px;" class="right">
-                                                    <p class="title">پست پیشتاز</p>
+                                                    <p>پست پیشتاز</p>
                                                     <p class="desc">زمان تقریبی سفارش بر اساس محدوده جغرافیایی: 48 - 72 ساعت
                                                 </div>
                                             </td>
@@ -359,7 +359,7 @@
                                             <td class="second">
                                                 <img class="right" src="http://94.182.168.34/Digikala/Image/Icon/tipax_48_icon.png" alt="IconPath">
                                                 <div style="margin-right: 135px; margin-top: -45px;" class="right">
-                                                    <p class="title">تیپاکس</p>
+                                                    <p>تیپاکس</p>
                                                     <p class="desc">زمان تقریبی سفارش بر اساس محدوده جغرافیایی: 24 - 48 ساعت
                                                 </div>
                                             </td>
@@ -387,7 +387,7 @@
                                             <td class="second">
                                                 <img class="right" src="http://94.182.168.34/Digikala/Image/Icon/vtn_48_icon.png" alt="IconPath">
                                                 <div style="margin-right: 135px; margin-top: -45px;" class="right">
-                                                    <p class="title">باربری (پس کرایه | لوازم خانگی سنگین)</p>
+                                                    <p>باربری (پس کرایه | لوازم خانگی سنگین)</p>
                                                     <p class="desc">زمان تقریبی سفارش بر اساس محدوده جغرافیایی: 24 - 48 ساعت</p>
                                                 </div>
                                             </td>
@@ -403,9 +403,12 @@
 
                     </div>
 
-                    <div class="foot col-lg-8 col-lg-offset-5 col-xs-offset-4">
+                    <div class="foot col-lg-8 col-lg-offset-5 col-xs-offset-4" style="margin-top:30px">
                         <a class="btn btn-primary btn-small" href="/ReviewInfo.html" data-dismiss="modal">ادامه </a>
-                        <a class="btn btn-default" href="/PortalHomePage.html" data-dismiss="modal">حذف سفارش </a>
+                        <a class="btn btn-default" href="/index.html" data-dismiss="modal">حذف سفارش </a>
+                    </div>
+                    <div class="foot  col-lg-10 col-lg-offset-1 col-xs-offset-4" style="margin-top:20px">
+                        <a class="btn btn-default" href="/Shopping.html" data-dismiss="modal">بازگشت </a>
                     </div>
                 </div>
             </div>

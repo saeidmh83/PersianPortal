@@ -143,6 +143,8 @@ p {
 @media (max-width: 480px) {
     #myCarousel .item {
         height: 200px;
+        color:#000;
+        text-align:center;
     }
 
 #slide1 {
@@ -297,6 +299,10 @@ body {
 		font-size: 10px;
 	}
 }
+
+.thumbnail{
+    min-height:320px
+ }
 /*body{
 background-color:black;
 }*/
@@ -528,7 +534,8 @@ body {
     height: 32px;
     padding-right: 35px;
     position: absolute;
-    left: 50px;
+    width:30%;
+    left: 0%;
     text-align: right;
 }
 
@@ -603,9 +610,9 @@ body {
   height:50px;
   width:100%;  
   color:#f6f3f7; 
-  background-image:url('/images/light-bar.png');
+  /*background-image:url('/images/light-bar.png');*/
     /*background-color:#FCE6ED;*/
-  /*background:#dd004e;*/  
+  background:#dd004e;  
     /*background: repeat-x;*/
   border:0px solid;
 }
@@ -614,8 +621,9 @@ body {
   border-left:10px #fce6ed ;
     /*width:30%;*/
     color:black;
+    font-size:xx-large;
     font-weight:bold;
-  background:url('/images/bar.png') right no-repeat;
+  /*background:url('/images/bar.png') right no-repeat;*/
 
 }
 

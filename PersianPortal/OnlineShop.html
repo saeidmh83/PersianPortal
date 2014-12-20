@@ -3,7 +3,7 @@
 <head>
 
     <!-- Website Title & Description for Search Engine purposes -->
-    <title> Bootstrap 3 یادگیری </title>
+    <title> پورتال جامع پارسی زبانان </title>
     <meta name="description" content="Learn how to code your first responsive website with the new Twitter Bootstrap 3.">
 
     <!-- Mobile viewport optimized -->
@@ -145,27 +145,23 @@
 
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner">
-                                <div class="item active" id="slide1">
+                                <div class="item active" id="slide1" style="text-align:center">
+                                    <img style="height:400px" src="images/securedownload%20(3).png" />
                                     <div class="carousel-caption">
-                                        <img style="height:400px" src="images/shazdeh.jpg" />
-                                        <h4>یادگیری Bootstrap 3</h4>
-                                        <p>یاد بگیرید چگونه با Bootstrap 3 وبسایت interactive بسازید</p>
                                     </div><!-- end carousel-caption-->
                                 </div><!-- end item -->
 
-                                <div class="item" id="slide2">
+                                <div class="item" id="slide2" style="text-align:center">
+                                    <img style="height:400px" src="images/__20120513_1748875240.gif" />
+
                                     <div class="carousel-caption">
-                                        <img style="height:400px" src="images/__20120513_1748875240.gif" />
-                                        <h4>یادگیری سریع کد زدن وبسایت</h4>
-                                        <p>به HTML5 از &amp; amp؛ CSS3 است البته محبوب Udemy است که هزاران مشتاق طراحان وب کمک راه اندازی حرفه ای طراحی وب سایت خود را.</p>
                                     </div><!-- end carousel-caption-->
                                 </div><!-- end item -->
 
-                                <div class="item" id="slide3">
+                                <div class="item" id="slide3" style="text-align:center">
+                                    <img style="height:400px" src="images/shazdeh.jpg" />
+                                    <img style="height:400px" src="images/874--500x500.jpg" />
                                     <div class="carousel-caption">
-                                        <img style="height:400px" src="images/874--500x500.jpg" />
-                                        <h4>اطلاعات اولیه میزبانی وب</h4>
-                                        <p>یاد بگیرید چگونه به خرید یک نام دامنه مناسب و بسته های میزبانی وب و وب سایت خود را زندگی می کنند در وب را با سهولت.</p>
                                     </div><!-- end carousel-caption-->
                                 </div><!-- end item -->
                             </div><!-- carousel-inner -->
@@ -177,8 +173,27 @@
 
                         <div class="row" id="books">
                             <div class="col-12">
-                                <h3>در مورد طراحی Web بیشتر بدانید</h3>
+                                <h2 style="margin-bottom:30px">محبوب ترین کتاب ها : </h2>
                                 <div class="thumbnails row">
+                                    <div class="col-lg-3 col-sm-4 col-xs-12">
+                                        <div class="thumbnail">
+                                            <!--<img alt="PSD to HTML5 &amp; CSS3" src="images/item_psd2html5.jpg">
+
+                                            <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> 39<sup>$</sup></div>-->
+
+                                            <img src="images/100%20sal%20tanhai.jpg" class="col-sm-7" />
+                                            <div class="caption">
+                                                <h2>صد سال تنهایی</h2>
+                                                <h3> قیمت : 30000 تومان </h3>
+                                                <p>نویسنده: گابریل گارسیا مارکز</p>
+                                                <p style="margin-top:20px">
+                                                    <a class="btn btn-small btn-link" href="#myModal100" data-toggle="modal" role="button">اطلاعات بیشتر</a>
+                                                    <a class="btn btn-primary btn-small" onclick="AddToCart()" href="#"><i class="fa fa-fw fa-shopping-cart"></i>اضافه به سبد </a>
+                                                </p>
+                                            </div><!-- end caption -->
+                                        </div><!-- end thumbnail -->
+                                    </div><!-- end col-6 -->
+
                                     <div class="col-lg-3 col-sm-4 col-xs-12">
                                         <div class="thumbnail">
                                             <!--<img alt="PSD to HTML5 &amp; CSS3" src="images/item_psd2html5.jpg">
@@ -188,19 +203,54 @@
                                             <div class="caption">
                                                 <h2>شازده کوچولو</h2>
                                                 <h3> قیمت : 12000 تومان </h3>
-                                                <p>نویسنده: آنتوان دوسنت اگزوپری</p>
-                                                <p>
+                                                <p>نویسنده: آنتوان دو سنت اگزوپری</p>
+                                                <p style="margin-top:37px">
+                                                    <a class="btn btn-small btn-link" href="#myModalShazde" data-toggle="modal" role="button">اطلاعات بیشتر</a>
+                                                    <a class="btn btn-primary btn-small" onclick="AddToCart()" href="#"><i class="fa fa-fw fa-shopping-cart"></i>اضافه به سبد </a>
+                                                </p>
+                                            </div><!-- end caption -->
+                                        </div><!-- end thumbnail -->
+                                    </div>
+
+                                    <div class="col-lg-3 col-sm-4 col-xs-12">
+                                        <div class="thumbnail">
+                                            <!--<img alt="PSD to HTML5 &amp; CSS3" src="images/item_psd2html5.jpg">
+
+                                            <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> 39<sup>$</sup></div>-->
+                                            <img src="images/bishoori.jpg" class="col-sm-7" />
+                                            <div class="caption" style="margin-top:20px">
+                                                <h2 style="font-size:x-large">بیشعوری</h2>
+                                                <h3> قیمت : 12000 تومان </h3>
+                                                <p>نویسنده: خاویر کرمنت</p>
+                                                <p style="margin-top:78px">
                                                     <a class="btn btn-small btn-link" href="#myModal" data-toggle="modal" role="button">اطلاعات بیشتر</a>
                                                     <a class="btn btn-primary btn-small" onclick="AddToCart()" href="#"><i class="fa fa-fw fa-shopping-cart"></i>اضافه به سبد </a>
                                                 </p>
                                             </div><!-- end caption -->
                                         </div><!-- end thumbnail -->
-                                    </div><!-- end col-6 -->
+                                    </div>
+                                    <div class="col-lg-3 col-sm-4 col-xs-12">
+                                        <div class="thumbnail">
+                                            <!--<img alt="PSD to HTML5 &amp; CSS3" src="images/item_psd2html5.jpg">
 
+                                            <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> 39<sup>$</sup></div>-->
+                                            <img src="images/donyaye%20soofi.jpg" class="col-sm-7" />
+                                            <div class="caption" style="margin-top:20px">
+                                                <h2>دنیای سوفی</h2>
+                                                <h3> قیمت : 21000 تومان </h3>
+                                                <p>نویسنده: یوستین گردر</p>
+                                                <p style="margin-top:35px">
+                                                    <a class="btn btn-small btn-link" href="#myModal" data-toggle="modal" role="button">اطلاعات بیشتر</a>
+                                                    <a class="btn btn-primary btn-small" onclick="AddToCart()" href="#"><i class="fa fa-fw fa-shopping-cart"></i>اضافه به سبد </a>
+                                                </p>
+                                            </div><!-- end caption -->
+                                        </div><!-- end thumbnail -->
+                                    </div>
                                 </div><!-- end row -->
                             </div><!-- end col-12 -->
 
-                            <div class="modal fade in" id="myModal" aria-hidden="false" style="display: none;">
+
+                            <div class="modal fade in" id="myModalShazde" aria-hidden="false" style="display: none;">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -232,6 +282,63 @@
                                     </div><!-- end modal-content -->
                                 </div><!-- end modal-dialog -->
                             </div>
+                            <div class="modal fade in" id="myModal100" aria-hidden="false" style="display: none;">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button class="close" data-dismiss="modal">×</button>
+
+                                            <h4 class="modal-title">صد سال تنهایی</h4>
+                                        </div><!-- end modal-header -->
+                                        <div class="modal-body">
+                                            <table>
+                                                <tr>
+                                                    <td><h4>کد کالا:</h4></td>
+                                                    <td><p> ۲۵۶۰۲</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h4>دسته‌بندی:</h4></td>
+                                                    <td><p> داستان جهان</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h4>عنوان:</h4></td>
+                                                    <td><p>صد سال تنهایی</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h4>موضوع:</h4></td>
+                                                    <td><p> داستان های کلمبیایی قرن 20</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h4>نویسنده : </h4></td>
+                                                    <td><p> کیومرث پارسای</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h4>مترجم :</h4></td>
+                                                    <td><p>  گابریل گارسیا مارکز</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h4>ناشر: </h4></td>
+                                                    <td><p> آریابان</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h4>سال انتشار: </h4></td>
+                                                    <td><p>۱۳۹۱</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h4>قیمت:  </h4></td>
+                                                    <td><p>۳۰۰,۰۰۰ ریال</p></td>
+                                                </tr>
+                                            </table>
+
+                                        </div><!-- end modal-body -->
+
+                                        <div class="modal-footer">
+                                            <a class="btn btn-primary btn-small" href="#" onclick="AddToCart()" data-dismiss="modal"><i class="fa fa-fw fa-shopping-cart"></i>اضافه به سبد </a>
+                                            <button class="btn btn-default" data-dismiss="modal" type="button">بستن</button>
+                                        </div><!-- end modal-footer -->
+                                    </div><!-- end modal-content -->
+                                </div><!-- end modal-dialog -->
+                            </div>
                         </div>
 
 
@@ -248,7 +355,7 @@
                     </div><!-- end tab-pane -->
 
                     <div class="tab-pane" id="tab2">
-
+                        
                         <div class="carousel slide" id="myCarousel">
 
                             <!-- Indicators -->
@@ -260,19 +367,17 @@
 
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner">
-                                <div class="item active" id="slide1">
+                                <div class="item active" id="slide1" style="text-align:center">
+                                    <img style="height:400px" src="images/chartar.jpg" />
+                                    <img style="height:400px" src="images/shahname.jpg" />
                                     <div class="carousel-caption">
-                                        <img style="height:400px" src="images/shazdeh.jpg" />
-                                        <h4>یادگیری Bootstrap 3</h4>
-                                        <p>یاد بگیرید چگونه با Bootstrap 3 وبسایت interactive بسازید</p>
                                     </div><!-- end carousel-caption-->
                                 </div><!-- end item -->
 
-                                <div class="item" id="slide2">
+                                <div class="item" id="slide2" style="text-align:center">
+                                    <img style="height:400px" src="images/taar.jpg" />
+                                    <img style="height:400px" src="images/na%20fereshte%20o%20na%20sheytan.jpg" />
                                     <div class="carousel-caption">
-                                        <img style="height:400px" src="images/__20120513_1748875240.gif" />
-                                        <h4>یادگیری سریع کد زدن وبسایت</h4>
-                                        <p>به HTML5 از &amp; amp؛ CSS3 است البته محبوب Udemy است که هزاران مشتاق طراحان وب کمک راه اندازی حرفه ای طراحی وب سایت خود را.</p>
                                     </div><!-- end carousel-caption-->
                                 </div><!-- end item -->
 
@@ -292,162 +397,145 @@
 
                         <div class="row" id="CDs">
                             <div class="col-12">
-                                <h3>در مورد طراحی Web بیشتر بدانید</h3>
+                                <h3> جدیدترین و محبوب ترین cd ها: </h3>
                                 <div class="thumbnails row">
                                     <div class="col-lg-3 col-sm-4 col-xs-12">
                                         <div class="thumbnail">
                                             <!--<img alt="PSD to HTML5 &amp; CSS3" src="images/item_psd2html5.jpg">
 
                                             <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> 39<sup>$</sup></div>-->
-                                            <img src="images/shazdeh.jpg" class="col-sm-7" />
+                                            <img src="images/na%20fereshte%20o%20na%20sheytan.jpg" class="col-sm-12" />
                                             <div class="caption">
-                                                <h2>شازده کوچولو</h2>
+                                                <h2>نه فرشته ام نه شیطان</h2>
                                                 <h3> قیمت : 12000 تومان </h3>
-                                                <p>نویسنده: آنتوان دوسنت اگزوپری</p>
+                                                <p>اثر: همایون شجریان و تهمورس پورناظری</p>
 
                                                 <p>
-                                                    <a class="btn btn-small btn-link" href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank">اطلاعات بیشتر</a>
-                                                    <a class="btn btn-primary btn-small" href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank"><i class="fa fa-fw fa-shopping-cart"></i>اضافه به سبد </a>
+                                                    <a class="btn btn-small btn-link" href="#myModalCD1" data-toggle="modal" role="button">اطلاعات بیشتر</a>
+                                                    <a class="btn btn-primary btn-small" onclick="AddToCart()" href="#"><i class="fa fa-fw fa-shopping-cart"></i>اضافه به سبد </a>
                                                 </p>
                                             </div><!-- end caption -->
                                         </div><!-- end thumbnail -->
                                     </div><!-- end col-6 -->
-
                                     <div class="col-lg-3 col-sm-4 col-xs-12">
                                         <div class="thumbnail">
                                             <!--<img alt="PSD to HTML5 &amp; CSS3" src="images/item_psd2html5.jpg">
 
                                             <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> 39<sup>$</sup></div>-->
-                                            <img src="images/shazdeh.jpg" class="col-sm-7" />
-                                            <div class="caption">
-                                                <h2>شازده کوچولو</h2>
-                                                <h3> قیمت : 12000 تومان </h3>
-                                                <p>نویسنده: آنتوان دوسنت اگزوپری</p>
 
-                                                <p>
-                                                    <a class="btn btn-small btn-link" href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank">اطلاعات بیشتر</a>
-                                                    <a class="btn btn-primary btn-small" href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank"><i class="fa fa-fw fa-shopping-cart"></i>اضافه به سبد </a>
+                                            <img src="images/shahname.jpg" class="col-sm-12" />
+                                            <div class="caption" style="margin-top:20px">
+                                                <h2>شاهنامه خوانی </h2>
+                                                <h3> قیمت : 12000 تومان </h3>
+                                                <p>اثر: جمعی از نوازندگان</p>
+
+                                                <p style="margin-top:33px">
+                                                    <a class="btn btn-small btn-link" href="#myModalCD2" data-toggle="modal" role="button">اطلاعات بیشتر</a>
+                                                    <a class="btn btn-primary btn-small" onclick="AddToCart()" href="#"><i class="fa fa-fw fa-shopping-cart"></i>اضافه به سبد </a>
                                                 </p>
                                             </div><!-- end caption -->
                                         </div><!-- end thumbnail -->
-                                    </div><!-- end col-6 -->
-
+                                    </div>
                                     <div class="col-lg-3 col-sm-4 col-xs-12">
                                         <div class="thumbnail">
                                             <!--<img alt="PSD to HTML5 &amp; CSS3" src="images/item_psd2html5.jpg">
 
                                             <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> 39<sup>$</sup></div>-->
-                                            <img src="images/shazdeh.jpg" class="col-sm-7" />
-                                            <div class="caption">
-                                                <h2>شازده کوچولو</h2>
-                                                <h3> قیمت : 12000 تومان </h3>
-                                                <p>نویسنده: آنتوان دوسنت اگزوپری</p>
 
-                                                <p>
-                                                    <a class="btn btn-small btn-link" href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank">اطلاعات بیشتر</a>
-                                                    <a class="btn btn-primary btn-small" href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank"><i class="fa fa-fw fa-shopping-cart"></i>اضافه به سبد </a>
+                                            <img src="images/taar.jpg" class="col-sm-12" />
+                                            <div class="caption" style="padding:10px">
+                                                <h2 style="margin-top:215px">تار درویش خان</h2>
+                                                <h3> قیمت : 24000 تومان </h3>
+                                                <p>اثر: درویش خان</p>
+
+                                                <p style="margin-top:23px">
+                                                    <a class="btn btn-small btn-link" href="#myModalCD3" data-toggle="modal" role="button">اطلاعات بیشتر</a>
+                                                    <a class="btn btn-primary btn-small" onclick="AddToCart()" href="#"><i class="fa fa-fw fa-shopping-cart"></i>اضافه به سبد </a>
                                                 </p>
                                             </div><!-- end caption -->
                                         </div><!-- end thumbnail -->
-                                    </div><!-- end col-6 -->
-
+                                    </div>
                                     <div class="col-lg-3 col-sm-4 col-xs-12">
                                         <div class="thumbnail">
                                             <!--<img alt="PSD to HTML5 &amp; CSS3" src="images/item_psd2html5.jpg">
 
                                             <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> 39<sup>$</sup></div>-->
-                                            <img src="images/shazdeh.jpg" class="col-sm-7" />
-                                            <div class="caption">
-                                                <h2>شازده کوچولو</h2>
-                                                <h3> قیمت : 12000 تومان </h3>
-                                                <p>نویسنده: آنتوان دوسنت اگزوپری</p>
 
-                                                <p>
-                                                    <a class="btn btn-small btn-link" href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank">اطلاعات بیشتر</a>
-                                                    <a class="btn btn-primary btn-small" href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank"><i class="fa fa-fw fa-shopping-cart"></i>اضافه به سبد </a>
+                                            <img src="images/chartar.jpg" class="col-sm-12" />
+                                            <div class="caption" style="padding-top:40px">
+                                                <h2 style="margin-top:177px">باران تویی</h2>
+                                                <h3> قیمت : 10000 تومان </h3>
+                                                <p>اثر: چارتار</p>
+
+                                                <p style="margin-top:33px">
+                                                    <a class="btn btn-small btn-link" href="#myModalCD1" data-toggle="modal" role="button">اطلاعات بیشتر</a>
+                                                    <a class="btn btn-primary btn-small" onclick="AddToCart()" href="#"><i class="fa fa-fw fa-shopping-cart"></i>اضافه به سبد </a>
                                                 </p>
                                             </div><!-- end caption -->
                                         </div><!-- end thumbnail -->
-                                    </div><!-- end col-6 -->
-
-                                    <div class="col-lg-3 col-sm-4 col-xs-12">
-                                        <div class="thumbnail">
-                                            <!--<img alt="PSD to HTML5 &amp; CSS3" src="images/item_psd2html5.jpg">
-
-                                            <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> 39<sup>$</sup></div>-->
-                                            <img src="images/shazdeh.jpg" class="col-sm-7" />
-                                            <div class="caption">
-                                                <h2>شازده کوچولو</h2>
-                                                <h3> قیمت : 12000 تومان </h3>
-                                                <p>نویسنده: آنتوان دوسنت اگزوپری</p>
-
-                                                <p>
-                                                    <a class="btn btn-small btn-link" href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank">اطلاعات بیشتر</a>
-                                                    <a class="btn btn-primary btn-small" href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank"><i class="fa fa-fw fa-shopping-cart"></i>اضافه به سبد </a>
-                                                </p>
-                                            </div><!-- end caption -->
-                                        </div><!-- end thumbnail -->
-                                    </div><!-- end col-6 -->
-
-                                    <div class="col-lg-3 col-sm-4 col-xs-12">
-                                        <div class="thumbnail">
-                                            <!--<img alt="PSD to HTML5 &amp; CSS3" src="images/item_psd2html5.jpg">
-
-                                            <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> 39<sup>$</sup></div>-->
-                                            <img src="images/shazdeh.jpg" class="col-sm-7" />
-                                            <div class="caption">
-                                                <h2>شازده کوچولو</h2>
-                                                <h3> قیمت : 12000 تومان </h3>
-                                                <p>نویسنده: آنتوان دوسنت اگزوپری</p>
-
-                                                <p>
-                                                    <a class="btn btn-small btn-link" href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank">اطلاعات بیشتر</a>
-                                                    <a class="btn btn-primary btn-small" href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank"><i class="fa fa-fw fa-shopping-cart"></i>اضافه به سبد </a>
-                                                </p>
-                                            </div><!-- end caption -->
-                                        </div><!-- end thumbnail -->
-                                    </div><!-- end col-6 -->
-
-                                    <div class="col-lg-3 col-sm-4 col-xs-12">
-                                        <div class="thumbnail">
-                                            <!--<img alt="PSD to HTML5 &amp; CSS3" src="images/item_psd2html5.jpg">
-
-                                            <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> 39<sup>$</sup></div>-->
-                                            <img src="images/shazdeh.jpg" class="col-sm-7" />
-                                            <div class="caption">
-                                                <h2>شازده کوچولو</h2>
-                                                <h3> قیمت : 12000 تومان </h3>
-                                                <p>نویسنده: آنتوان دوسنت اگزوپری</p>
-
-                                                <p>
-                                                    <a class="btn btn-small btn-link" href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank">اطلاعات بیشتر</a>
-                                                    <a class="btn btn-primary btn-small" href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank"><i class="fa fa-fw fa-shopping-cart"></i>اضافه به سبد </a>
-                                                </p>
-                                            </div><!-- end caption -->
-                                        </div><!-- end thumbnail -->
-                                    </div><!-- end col-6 -->
-
-                                    <div class="col-lg-3 col-sm-4 col-xs-12">
-                                        <div class="thumbnail">
-                                            <!--<img alt="PSD to HTML5 &amp; CSS3" src="images/item_psd2html5.jpg">
-
-                                            <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> 39<sup>$</sup></div>-->
-                                            <img src="images/shazdeh.jpg" class="col-sm-7" />
-                                            <div class="caption">
-                                                <h2>شازده کوچولو</h2>
-                                                <h3> قیمت : 12000 تومان </h3>
-                                                <p>نویسنده: آنتوان دوسنت اگزوپری</p>
-
-                                                <p>
-                                                    <a class="btn btn-small btn-link" href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank">اطلاعات بیشتر</a>
-                                                    <a class="btn btn-primary btn-small" href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank"><i class="fa fa-fw fa-shopping-cart"></i>اضافه به سبد </a>
-                                                </p>
-                                            </div><!-- end caption -->
-                                        </div><!-- end thumbnail -->
-                                    </div><!-- end col-6 -->
-
+                                    </div>
                                 </div><!-- end row -->
                             </div><!-- end col-12 -->
+
+
+                            <div class="modal fade in" id="myModalCD1" aria-hidden="false" style="display: none;">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button class="close" data-dismiss="modal">×</button>
+
+                                            <h4 class="modal-title">نه فرشته ام نه شیطان</h4>
+                                        </div><!-- end modal-header -->
+                                        <div class="modal-body">
+                                            <table>
+                                                <tr>
+                                                    <td><h4>کد کالا:</h4></td>
+                                                    <td><p> ۷۶۵۰۸</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h4>دسته‌بندی:</h4></td>
+                                                    <td><p> موسیقی و فیلم (CD-DVD)</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h4>عنوان:</h4></td>
+                                                    <td><p>نه فرشته ام نه شیطان</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h4>موضوع:</h4></td>
+                                                    <td><p>سنتی آوازی</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h4>پدیدآورنده  : </h4></td>
+                                                    <td><p> همایون شجریان - تهمورس پورناظری</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h4>پدیدآورنده  :</h4></td>
+                                                    <td><p>  صدرالدین حسین خانی</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h4>ناشر: </h4></td>
+                                                    <td><p>ایران گام</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h4>سال انتشار: </h4></td>
+                                                    <td><p>۱۳۹۲</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h4>قیمت:  </h4></td>
+                                                    <td><p>12۰,۰۰۰ ریال</p></td>
+                                                </tr>
+                                            </table>
+
+                                        </div><!-- end modal-body -->
+
+                                        <div class="modal-footer">
+                                            <a class="btn btn-primary btn-small" href="#" onclick="AddToCart()" data-dismiss="modal"><i class="fa fa-fw fa-shopping-cart"></i>اضافه به سبد </a>
+                                            <button class="btn btn-default" data-dismiss="modal" type="button">بستن</button>
+                                        </div><!-- end modal-footer -->
+                                    </div><!-- end modal-content -->
+                                </div><!-- end modal-dialog -->
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -472,7 +560,7 @@
             }
 
             function AddToCart() {
-                $("#ShoppingCartNum").css("display","block");
+                $("#ShoppingCartNum").css("display", "block");
                 $("#ShoppingCartNum").html(count);
                 count++;
             }
